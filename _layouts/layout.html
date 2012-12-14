@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <meta name="keywords" content="Shota Fukumori, sora_h, sorah, Sora Harakami, 福森, 匠大, 福森匠大">
-    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/styles/common.css" type="text/css">
-    <script type="text/javascript">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Shota Fukumori, sora_h, sorah, Sora Harakami, 福森, 匠大, 福森匠大, そらはー, そらは">
 
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/styles/common.css" type="text/css">
+    <link rel="stylesheet" href="/fonts/ligature_symbols/index.css" type="text/css">
+    {{ % if page.style % }}
+    <link rel="stylesheet" href="/styles/{{ page.style }}.css" type="text/css">
+    {{ % endif % }}
+
+    <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-1373818-7']);
       _gaq.push(['_trackPageview']);
@@ -16,16 +21,22 @@
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
     </script>
+
+    {{ % if page.jquery % }}
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    {{ % endif % }}
+    {{ % if page.script % }}
+    <script src="{{page.script}}"></script>
+    {{ % endif % }}
+    {{ % if page.head % }}
+    {{ % raw % }}
+    {{ page.head }}
+    {{ % endraw % }}
+    {{ % endif % }}
     <title>{{ page.title }}</title>
   </head>
   <body>
-    <header>
-    </header>
-    <div id="container">
-      {{ content }}
-    </div>
+    {{ content }}
   </body>
 </html>

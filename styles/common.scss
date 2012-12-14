@@ -1,28 +1,45 @@
-$base: rgb(25, 47, 53);
-$head_color: lighten($base, 10%);
-$gray: mix($base, #EEE, 10%);
-
+@import "_variables.scss";
 
 * {
   font-family: 'Source Sans Pro', 'Helvetica Neue', sans-serif;
+}
+
+pre, code {
+  font-family: 'Source Code Pro', 'Monaco', monospace;
+}
+
+body {
   font-size: 20px;
-  color: $base;
+  color: $text;
+  font-weight: 300;
+}
+
+a {
+  color: mix($base, #282828, 40%);
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: $head_color;
   margin-top: 10px;
   margin-bottom: 10px;
-  padding: 5px 20px;
-  border-top: 1px solid $gray;
-  border-bottom: 1px solid $gray;
+  font-weight: 400;
 }
 
-h1 { font-size: 2.0em; }
+h1, h2 {
+  padding: 5px 20px;
+  border-top: 1px solid $gray;
+  border-bottom: 1px solid $gray; 
+}
+
+b, strong {
+  font-weight: 400;
+}
+
+h1 { font-size: 2.1em; }
 h2 { font-size: 1.8em; }
-h3 { font-size: 1.6em; }
-h4 { font-size: 1.4em; }
-h5 { font-size: 1.2em; }
+h3 { font-size: 1.3em; }
+h4 { font-size: 1.2em; }
+h5 { font-size: 1.1em; }
 h6 { font-size: 1.1em; }
 
 body {
@@ -30,8 +47,25 @@ body {
 }
 
 #container {
-  width: 750px;
+  width: $width;
   margin-left: auto;
+  margin-top: 20px;
   margin-right: auto;
   text-align: left;
+}
+
+.column2 {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+
+  & > div, & > section {
+    display: inline-block;
+  }
+
+  &.line {
+    -webkit-column-rule: 1px solid $gray;
+    -moz-column-rule: 1px solid $gray;
+    column-rule: 1px solid $gray;
+  }
 }
