@@ -62,3 +62,31 @@
 .subworks {
   list-style: none;
 }
+
+/* for index */
+
+#bio.index {
+  .also_known_as {
+    color: darken($gray, 30%);
+    font-size: 0.8em;
+  }
+
+  nav {
+    a {
+      text-decoration: none;
+      color: $text;
+
+      &:hover {
+        color: $base;
+      }
+    }
+  }
+
+  p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .more {
+  }
+}
