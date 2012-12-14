@@ -8,7 +8,7 @@ pre, code {
   font-family: 'Source Code Pro', 'Monaco', monospace;
 }
 
-body {
+body, p {
   font-size: 20px;
   color: $text;
   font-weight: 300;
@@ -36,7 +36,7 @@ b, strong {
 }
 
 h1 { font-size: 2.1em; }
-h2 { font-size: 1.8em; }
+h2 { font-size: 1.6em; }
 h3 { font-size: 1.3em; }
 h4 { font-size: 1.2em; }
 h5 { font-size: 1.1em; }
