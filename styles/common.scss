@@ -69,3 +69,7 @@ body {
     column-rule: 1px solid $gray;
   }
 }
+
+ul.nobullets li {
+  list-style-type: none;
+}
