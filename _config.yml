@@ -13,6 +13,10 @@ pygments:    false
 markdown:    maruku
 permalink:   date
 
+exclude:
+  - vendor/bundle
+  - gems
+
 maruku:
   use_tex:    false
   use_divs:   false
