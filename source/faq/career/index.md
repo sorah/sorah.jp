@@ -1,5 +1,5 @@
 ---
-layout: page
+title: 進路に関するFAQ - sorah.jp
 ---
 
 # 進路に関するFAQ (rev. 3)

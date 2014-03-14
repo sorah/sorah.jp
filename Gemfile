@@ -1,9 +1,11 @@
-source "http://rubygems.org/"
+source 'https://rubygems.org'
 
-gem 'jekyll'
-gem 'jekyll-sass'
+gem "middleman", "~>3.2.2"
 
-gem 'maruku'
-gem 'rdiscount'
-gem 'kramdown'
-gem 'RedCloth'
+# Live-reloading plugin
+gem "middleman-livereload", "~> 3.1.0"
+
+# For faster file watcher updates on Windows:
+gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
+
+gem 'redcarpet'

@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: 'LigatureSymbols';
-    src: url('LigatureSymbols-2.09.eot');
-    src: url('LigatureSymbols-2.09.eot?#iefix') format('embedded-opentype'),
-         url('LigatureSymbols-2.09.woff') format('woff'),
-         url('LigatureSymbols-2.09.ttf') format('truetype'),
-         url('LigatureSymbols-2.09.svg#LigatureSymbols') format('svg');
-    src: url('LigatureSymbols-2.09.ttf') format('truetype');
+    src: url('/fonts/ligature_symbols/LigatureSymbols-2.09.eot');
+    src: url('/fonts/ligature_symbols/LigatureSymbols-2.09.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/ligature_symbols/LigatureSymbols-2.09.woff') format('woff'),
+         url('/fonts/ligature_symbols/LigatureSymbols-2.09.ttf') format('truetype'),
+         url('/fonts/ligature_symbols/LigatureSymbols-2.09.svg#LigatureSymbols') format('svg');
+    src: url('/fonts/ligature_symbols/LigatureSymbols-2.09.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
