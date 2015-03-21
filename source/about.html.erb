@@ -8,11 +8,11 @@ title: Shota Fukumori (sora_h)
     <img src="http://www.gravatar.com/avatar/b99311b48290f8ee37311890a8edfb1d.png?s=440">
   </div>
 
-  <h1>Shota Fukumori (sora_h)</h1>
+  <h1>Shota Fukumori (sorah)</h1>
   <div class="title">Software Engineer</div>
-  <div class="also_known_as"><span>Also known as:</span> sora_h, そらはー, 福森匠大</div>
+  <div class="also_known_as"><span>Also known as:</span> sora_h, soraher, そらは, 福森匠大</div>
 
-  <p>He is Ruby committer and a Rubyist. Interested in web development, computer science.</p>
+  <p>He is Ruby committer and a Rubyist. Interested in web, distributed systems, and computer science.</p>
   <p>Lives in Tokyo, Japan.</p>
 </section>
 
@@ -20,15 +20,13 @@ title: Shota Fukumori (sora_h)
   <h2>Identifications</h2>
   <ul class="column2">
     <li class="lsf-icon" title="mail">her@sorah.jp</li>
-    <li class="lsf-icon" title="twitter"><a href="http://twitter.com/sora_h">@sora_h</a></li>
-    <li class="lsf-icon" title="facebook"><a href="http://www.facebook.com/shota.fukumori">Shota Fukumori</a></li>
+    <li class="lsf-icon" title="github"><a href="http://github.com/sorah">github.com/<b>sorah</b></a></li>
     <li class="lsf-icon" title="feed"><a href="http://blog.sorah.jp/">blog.sorah.jp</a></li>
     <li class="lsf-icon" title="feed"><a href="http://diary.sorah.jp/">diary.sorah.jp</a></li>
-    <li class="lsf-icon" title="google">sora134@gmail.com <span style="color: #AAA">(don't mail here)</span></li>
-    <li class="lsf-icon" title="github"><a href="http://github.com/sorah">github.com/<b>sorah</b></a></li>
-    <li class="lsf-icon" title="flickr"><a href="http://www.flickr.com/photos/sora_h/">sora_h</a></li>
-    <li class="lsf-icon" title="skype">sora_her</li>
+    <li class="lsf-icon" title="twitter"><a href="http://twitter.com/sora_h">@sora_h</a></li>
+    <li class="lsf-icon" title="facebook"><a href="http://www.facebook.com/shota.fukumori">Shota Fukumori</a></li>
     <li class="lsf-icon tabs"><a href="http://speakerdeck.com/u/sorah">speakerdeck.com/u/<b>sorah</b></a></li>
+    <li class="lsf-icon" title="flickr"><a href="http://www.flickr.com/photos/sora_h/">sora_h</a></li>
   </ul>
   <p><a href="id.html">more...</a></p>
 </section>
@@ -37,23 +35,24 @@ title: Shota Fukumori (sora_h)
   <h2>Professional Experiences</h2>
 
   <section id="proexp_cookpad">
-    <h3 class="cl"><a href="http://info.cookpad.com/en">COOKPAD Inc.</a></h3>
+    <h3 class="cl"><a href="https://info.cookpad.com/en">Cookpad Inc.</a></h3>
     <div class="title">Engineer</div>
-    <span class="time">April 2012 - Present</span>
+    <span class="time">April 2012 - present</span>
     <ul>
-      <li><a href="http://cookpad.com/">COOKPAD</a> is the largest recipe sharing website in Japan. <a href="http://info.cookpad.com/jobs/?affcd=eh7uc">We're hiring!</a></li>
+      <li><a href="http://cookpad.com/">Cookpad</a> is the largest recipe sharing website in Japan.</li>
       <li class="subworks">
         <div class="line">
           <section id="proexp_cookpad_dev-infra" class="subwork">
             <h4 class="cl">Development Infrastructure Team</h4>
             <span class="time">April 2012 - Present</span>
             <ul>
-              <li>Development Infrastructure Team (dev-infra, 開発基盤) aims to improve developers' productivity.</li>
-              <li>Includes like maintaining CI, upgrading Rails, developing internal tools.</li>
-              <li>I'm removing technical debts, improving internal-tools, and operating CI/test/development servers.</li>
+              <li>Development Infrastructure Team (dev-infra, 開発基盤) aims to improve developer experience (DX).</li>
+              <li>I'm removing technical debts, improving internal-tools, and operating CI, testing, and development servers.</li>
+              <li>Starting 2015, we're migrating one big monolithic web application to microservices like architecture, many small applications.
+              I'm developing libraries and middlewares to make develop and maintain many applications easier.</li>
+              <li>Developed <a href="https://github.com/sorah/mamiya">Mamiya</a>, <a href="https://github.com/sorah/envchain">Envchain</a> at this team.</li>
             </ul>
           </section>
-
         </div>
       </li>
     </ul>
@@ -61,7 +60,7 @@ title: Shota Fukumori (sora_h)
 </section>
 
 <section id="works">
-  <h2>My works</h2>
+  <h2>Works</h2>
 
   <div class="column2 line">
     <section id="works_days">
@@ -88,22 +87,39 @@ title: Shota Fukumori (sora_h)
         <li><a href="http://techlife.cookpad.com/entry/envchain">OS X キーチェーンから環境変数をセットするツールを作りました - クックパッド開発者ブログ</a></li>
       </ul>
     </section>
+
+    <section id="works_mamiya">
+      <h4 class="cl"><a href="https://github.com/sorah/mamiya">Mamiya</a></h4>
+      <span class="time">September 2014</span>
+      <ul>
+        <li>Fast deployment tool using tarballs and serf. This is used for <a href="http://cookpad.com">cookpad.com</a>, a web application backed with 150+ app servers.</li>
+        <li>Engineers in Cookpad can deploy within around 30 seconds for 150+ servers by this software.</li>
+        <li><a href="https://speakerdeck.com/sorah/scalable-deployments-how-we-deploy-rails-app-to-150-plus-hosts-in-a-minute">Scalable Deployments - How we deploy Rails app to 150+ hosts in a minute // Speaker Deck</a></li>
+      </ul>
+    </section>
+
+    <section id="works_etcvault">
+      <h4 class="cl"><a href="https://github.com/sorah/etcvault">etcvault</a></h4>
+      <span class="time">March 2015</span>
+      <ul>
+        <li>Reverse proxy for <a href="https://github.com/coreos/etcd">etcd</a>, but adding transparent encryption feature.</li>
+      </ul>
+    </section>
   </div>
 
-  <p>See more at <a href="http://github.com/sorah">my github</a> and <a href="https://rubygems.org/profiles/43528">my rubygems.org profile</a>.</p>
+  <p>See more at <a href="https://github.com/sorah">my GitHub</a> and <a href="https://rubygems.org/profiles/43528">my rubygems.org profile</a>.</p>
 </section>
 
 <section id="contributions">
-  <h2>Contributions</h2>
+  <h2>Contributions and Activities</h2>
 
   <div class="column2 line">
     <section id="contrib_ruby">
       <h3 class="cl"><a href="http://www.ruby-lang.org">Ruby</a></h3>
       <div class="title">Committer (developer)</div>
-      <span class="time">February 2011 - Present</span>
+      <span class="time">February 2011 - present</span>
       <ul>
-        <li>Ruby is a object oriented scripting language.</li>
-        <li>I works it as a committer. Also, I'm in Ruby's web page editorial team.</li>
+        <li>Also, I'm in Ruby's web page editorial team.</li>
       </ul>
     </section>
 
@@ -122,7 +138,7 @@ title: Shota Fukumori (sora_h)
     <section id="contrib_more">
       <h3 class="cl">And more</h3>
       <ul>
-        <li>And I've done more contributions to many projects, for example, <a href="http://www.sinatrarb.com/">Sinatra</a>.</li>
+        <li>And I've done more contributions to many projects, see more at <a href="https://github.com/sorah">my GitHub</a>.</li>
       </ul>
     </section>
   </div>
@@ -131,12 +147,14 @@ title: Shota Fukumori (sora_h)
 <section id="skills">
   <h2>Skills</h2>
   <ul>
-    <li><b>Programming Languages:</b> <a href="http://www.ruby-lang.org">Ruby</a>, <a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a> and <a href="http://coffeescript.org/">CoffeeScript</a>. Little Objective-C.</li>
-    <li><b>Frameworks:</b> <a href="http://rubyonrails.org">Ruby on Rails</a> and <a href="http://www.sinatrarb.com">Sinatra</a>.</li>
-    <li><b>Markup Languages:</b><a href="http://haml-lang.com">Haml</a>, <a href="http://sass-lang.com/">Sass</a> and <a href="http://en.wikipedia.org/wiki/HTML">HTML</a> + <a href="http://en.wikipedia.org/wiki/CSS">CSS</a>.</li>
-    <li><b>Systems:</b> <a href="http://www.apple.com/osx">OS X</a>, <a href="http://www.debian.org/">Debian</a>, <a href="http://www.ubuntu.com/">Ubuntu</a>, <a href="http://www.centos.org/">CentOS</a>, and <a href="http://www.gentoo.org">Gentoo</a>.</li>
-    <li><b>Server Management:</b> <a href="https://puppetlabs.com/">Puppet</a>, <a href="http://aws.amazon.com/">Amazon Web Services</a>.</li>
-    <li><b>Development Environment:</b> <a href="http://www.vim.org">Vim</a>, <a href="http://git-scm.com">git</a>.</li>
+    <li><b>Programming Languages:</b> <a href="http://www.ruby-lang.org">Ruby</a>, <a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a> and <a href="https://golang.org">Go</a></li>
+    <li><b>Frameworks:</b> <a href="http://rubyonrails.org">Ruby on Rails</a> and <a href="http://www.sinatrarb.com">Sinatra</a></li>
+    <li><b>Databases:</b> MySQL, Redis</li>
+    <li><b>Markup Languages:</b> <a href="http://haml-lang.com">Haml</a>, <a href="http://sass-lang.com/">Sass</a> and <a href="http://en.wikipedia.org/wiki/HTML">HTML</a> + <a href="http://en.wikipedia.org/wiki/CSS">CSS</a></li>
+    <li><b>Systems:</b> <a href="http://www.apple.com/osx">OS X</a>, <a href="http://www.debian.org/">Debian</a>, <a href="http://www.ubuntu.com/">Ubuntu</a>, <a href="http://www.centos.org/">CentOS</a>, and <a href="http://www.gentoo.org">Gentoo</a></li>
+    <li><b>Server Provisioning:</b> <a href="https://puppetlabs.com/">Puppet</a>, <a href="https://github.com/itamae-kitchen/itamae">Itamae</a></li>
+    <li><b>Platforms:</b><a href="http://aws.amazon.com/">Amazon Web Services</a></li>
+    <li><b>Development Environment:</b> <a href="http://www.vim.org">Vim</a>, <a href="http://git-scm.com">git</a></li>
   </ul>
 
   <h3>Coderwall Archivements</h3>
@@ -144,8 +162,34 @@ title: Shota Fukumori (sora_h)
   <p><a href='http://coderwall.com/sorah'><img src='http://api.coderwall.com/sorah/endorsecount.png'></a></p>
 </section>
 
+
+<section id="honors">
+  <h2>Honors</h2>
+  <div class="line">
+    <section>
+      <h3 class="cl">第 7 回 日本OSS奨励賞 (Japan OSS Contributors Award)</h3>
+      <span class="time">March 2012</span>
+      <ul>
+        <li><a href="http://ossforum.jp/ossaward7th2">http://ossforum.jp/ossaward7th2</a></li>
+      </ul>
+    </section>
+  </div>
+</section>
+
+<section id="communities">
+  <h2>Communities</h2>
+
+  <section id="communities_kmc">
+    <h3 class="cl"><a href="http://www.kmc.gr.jp/">Kyoto university Micro computer Club (KMC)</a></h3>
+    <div class="title">Member</div>
+    <span class="time">August 2009 - Present</span>
+    <ul>
+    </ul>
+  </section>
+</section>
+
 <section id="education">
-  <h2>Educations</h2>
+  <h2>Education</h2>
   <h3 class="cl">Utsunomiya-shi Yohoku Junior High School '12</h3>
   <span class="time">April 2009 - March 2012</span>
   <ul>
@@ -153,21 +197,8 @@ title: Shota Fukumori (sora_h)
   </ul>
 </section>
 
-<section id="works">
-  <h2>Communities</h2>
-  <section id="works_pasra">
-    <h3 class="cl"><a href="http://pasra.tk/">Team Pasra</a>, gamer &amp; engineers team</h3>
-    <div class="title">Leader, Founder</div>
-    <span class="time">August 2009 - Present</span>
-    <ul>
-      <li>Playing games, working with Ruby, etc.</li>
-    </ul>
-  </section>
-</section>
-
-
-<section id="appears">
-  <h2>Appears</h2>
+<section id="appearances">
+  <h2>Appearances</h2>
   <div class="column2 line">
     <section>
       <h3 class="cl">WEB+DB PRESS Vol.69</h3>
@@ -188,15 +219,3 @@ title: Shota Fukumori (sora_h)
     </section>
   </div>
 </section>
-
-
-<div id="other">
-  <h2>Other</h2>
-  <ul>
-    <li>GPG Public key: <a href="http://pgp.mit.edu:11371/pks/lookup?op=vindex&search=0x74AF0D6331604EB9">31604EB9</a> (newer), <a href="http://pgp.mit.edu:11371/pks/lookup?op=vindex&search=0x81CCCD5673E3B6AC">73E3B6AC</a> (deprecated)</li>
-    <li>
-      <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-      <g:plusone></g:plusone>
-    </li>
-  </ul>
-</div>
