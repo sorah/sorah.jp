@@ -52,7 +52,28 @@ set :images_dir, 'images'
 configure :build do
   # activate :minify_css
   # activate :minify_javascript
-  # activate :asset_hash
+  activate :asset_hash
   # activate :relative_assets
   # set :http_prefix, "/Content/images/"
+end
+
+activate :s3_sync do |s3_sync|
+  s3_sync.bucket                     = 'sorah.jp'
+  s3_sync.region                     = 'ap-northeast-1'
+  s3_sync.delete                     = true
+  s3_sync.after_build                = false
+  s3_sync.prefer_gzip                = true
+  s3_sync.path_style                 = true
+  s3_sync.reduced_redundancy_storage = false
+  s3_sync.acl                        = 'public-read'
+  s3_sync.encryption                 = false
+  s3_sync.prefix                     = ''
+  s3_sync.version_bucket             = false
+end
+
+default_caching_policy public: true, max_age: 60 * 60 * 24, must_revalidate: true
+caching_policy 'text/css', public: true, max_age: 60 * 60 * 24 * 2, must_revalidate: false
+
+%w(application/x-font-opentype application/font-sfnt application/vnd.ms-fontobject application/font-woff).each do |type|
+  caching_policy type, public: true, max_age: 60 * 60 * 24 * 7, must_revalidate: false
 end
