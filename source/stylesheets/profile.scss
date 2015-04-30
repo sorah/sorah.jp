@@ -92,3 +92,13 @@ body.index {
     }
   }
 }
+
+body.about {
+  .subwork {
+    h4 + span.time {
+      display: block;
+      margin-top: -10px;
+      margin-bottom: 8px;
+    }
+  }
+}
