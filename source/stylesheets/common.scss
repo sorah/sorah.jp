@@ -132,6 +132,9 @@ body > header {
 
 #container-fluid {
   text-align: left;
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .column2 {
