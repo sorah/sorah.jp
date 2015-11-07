@@ -57,6 +57,8 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
+activate :es6
+
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = 'sorah.jp'
   s3_sync.region                     = 'ap-northeast-1'
