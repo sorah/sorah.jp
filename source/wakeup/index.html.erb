@@ -1,139 +1,171 @@
 ---
-title: Identifications - sorah.jp
+layout: false
 ---
 
-<h1>Wake up</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="keywords" content="Shota Fukumori, sora_h, sorah, Sora Harakami, 福森, 匠大, 福森匠大, そらはー, そらは">
 
-<script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.15.min.js"></script>
-<script src="/wakeup/index.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600' rel='stylesheet' type='text/css'>
 
-<style type="text/css">
-.wakeup-debug {
-  color: gray;
-  font-size: 70%;
-}
-.wakeup_loading .wakeup-main {
-  display: none;
-}
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-1373818-7']);
+      _gaq.push(['_trackPageview']);
 
-.wakeup_ready .wakeup-loading-msg {
-  display: none;
-}
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
 
-.wakeup-main {
-  text-align: center;
-}
+    <%= stylesheet_link_tag "common", "ligature_symbols" %>
 
-.wakeup-main > div {
-  margin-bottom: 50px;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
-.wakeup-button {
-  font-size: 48px;
-}
+    <title>wakeup sorah</title>
+  </head>
 
-.wakeup-logs, .wakeup-results {
-  text-align: left;
-}
+  <body class="<%= page_classes %>">
+    <div id="container-fluid">
+      <h1>Wake up</h1>
 
-.blink_me {
-}
+      <script src="https://sdk.amazonaws.com/js/aws-sdk-2.2.15.min.js"></script>
+      <script src="/wakeup/index.js"></script>
 
-@keyframes wakeup_blinker {  
-  50% { opacity: 0.0; }
-}
+      <style type="text/css">
+        .wakeup-debug {
+          color: gray;
+          font-size: 70%;
+        }
+        .wakeup_loading .wakeup-main {
+          display: none;
+        }
 
-.wakeup-result.wakeup-result-waiting .wakeup_msgid:before {
-  content: "✆";
-  margin-right: 10px;
+        .wakeup_ready .wakeup-loading-msg {
+          display: none;
+        }
 
-  animation: wakeup_blinker 1s linear infinite;
-}
+        .wakeup-main {
+          text-align: center;
+        }
 
-.wakeup-result.wakeup-result-ack .wakeup_msgid:before {
-  content: "✔︎";
-  color: green;
-  margin-right: 10px;
-}
+        .wakeup-main > div {
+          margin-bottom: 50px;
+        }
 
-.wakeup-result.wakeup-result-skip .wakeup_msgid:before {
-  content: "☃";
-  margin-right: 10px;
-}
+        .wakeup-button {
+          font-size: 48px;
+        }
 
-.wakeup-result.wakeup-result-error .wakeup_msgid:before {
-  content: "✖︎";
-  color: red;
-  margin-right: 10px;
-}
+        .wakeup-logs, .wakeup-results {
+          text-align: left;
+        }
 
-.wakeup-result.wakeup-result-timeout .wakeup_msgid:before {
-  content: "⚠︎";
-  margin-right: 10px;
-}
+        .blink_me {
+        }
 
-.wakeup-result {
-  border: 1px solid #F6F9FF;
-  border-radius: 3px;
-  margin-bottom: 12px;
-}
+        @keyframes wakeup_blinker {  
+          50% { opacity: 0.0; }
+        }
 
-.wakeup-result .wakeup_msgid {
-  background-color: #F6F9FF;
-  padding: 6px 12px;
-}
+        .wakeup-result.wakeup-result-waiting .wakeup_msgid:before {
+          content: "✆";
+          margin-right: 10px;
 
-.wakeup-result .wakeup_state {
-  padding: 6px 12px;
-  padding-top: 6px;
-}
-</style>
+          animation: wakeup_blinker 1s linear infinite;
+        }
 
-<div class="wakeup-pane wakeup_loading">
-  <div class="wakeup-loading-msg">Preparing...</div>
-  <div class="wakeup-main">
-    <button class="wakeup-button">Wake up!</button>
-    <div class="wakeup-current">
+        .wakeup-result.wakeup-result-ack .wakeup_msgid:before {
+          content: "✔︎";
+          color: green;
+          margin-right: 10px;
+        }
+
+        .wakeup-result.wakeup-result-skip .wakeup_msgid:before {
+          content: "☃";
+          margin-right: 10px;
+        }
+
+        .wakeup-result.wakeup-result-error .wakeup_msgid:before {
+          content: "✖︎";
+          color: red;
+          margin-right: 10px;
+        }
+
+        .wakeup-result.wakeup-result-timeout .wakeup_msgid:before {
+          content: "⚠︎";
+          margin-right: 10px;
+        }
+
+        .wakeup-result {
+          border: 1px solid #F6F9FF;
+          border-radius: 3px;
+          margin-bottom: 12px;
+        }
+
+        .wakeup-result .wakeup_msgid {
+          background-color: #F6F9FF;
+          padding: 6px 12px;
+        }
+
+        .wakeup-result .wakeup_state {
+          padding: 6px 12px;
+          padding-top: 6px;
+        }
+      </style>
+
+      <div class="wakeup-pane wakeup_loading">
+        <div class="wakeup-loading-msg">Preparing...</div>
+        <div class="wakeup-main">
+          <button class="wakeup-button">Wake up!</button>
+          <div class="wakeup-current">
+          </div>
+
+          <div class="wakeup-results">
+            <!--
+            <div class="wakeup-result wakeup-result-waiting">
+              <div class="wakeup_msgid">2f613eca-4b2b-4e76-aeac-5b04972d2423</div>
+              <div class="wakeup_state">waiting</div>
+            </div>
+            <div class="wakeup-result wakeup-result-ack">
+              <div class="wakeup_msgid">2f613eca-4b2b-4e76-aeac-5b04972d2423</div>
+              <div class="wakeup_state">ack: HaNaZaKaRi - 藍井エイル (vol=60)</div>
+            </div>
+            <div class="wakeup-result wakeup-result-skip">
+              <div class="wakeup_msgid">2f613eca-4b2b-4e76-aeac-5b04972d2423</div>
+              <div class="wakeup_state">skip: not in home</div>
+            </div>
+            <div class="wakeup-result wakeup-result-error">
+              <div class="wakeup_msgid">2f613eca-4b2b-4e76-aeac-5b04972d2423</div>
+              <div class="wakeup_state">error: xxx (contact Sorah for details)</div>
+            </div>
+            <div class="wakeup-result wakeup-result-timeout">
+              <div class="wakeup_msgid">2f613eca-4b2b-4e76-aeac-5b04972d2423</div>
+              <div class="wakeup_state">timed out (contact Sorah for details)</div>
+            </div>
+            -->
+          </div>
+
+          <div class="wakeup-logs">
+            <ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <a class="twitter-timeline" href="https://twitter.com/hashtag/sorah_wakeup" data-widget-id="663070216822243328">#sorah_wakeup Tweets</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+      <div class="wakeup-debug">
+        <pre><code class="wakeup-debug-body">
+        </code></pre>
+      </div>
     </div>
-
-    <div class="wakeup-results">
-      <!--
-      <div class="wakeup-result wakeup-result-waiting">
-        <div class="wakeup_msgid">2f613eca-4b2b-4e76-aeac-5b04972d2423</div>
-        <div class="wakeup_state">waiting</div>
-      </div>
-      <div class="wakeup-result wakeup-result-ack">
-        <div class="wakeup_msgid">2f613eca-4b2b-4e76-aeac-5b04972d2423</div>
-        <div class="wakeup_state">ack: HaNaZaKaRi - 藍井エイル (vol=60)</div>
-      </div>
-      <div class="wakeup-result wakeup-result-skip">
-        <div class="wakeup_msgid">2f613eca-4b2b-4e76-aeac-5b04972d2423</div>
-        <div class="wakeup_state">skip: not in home</div>
-      </div>
-      <div class="wakeup-result wakeup-result-error">
-        <div class="wakeup_msgid">2f613eca-4b2b-4e76-aeac-5b04972d2423</div>
-        <div class="wakeup_state">error: xxx (contact Sorah for details)</div>
-      </div>
-      <div class="wakeup-result wakeup-result-timeout">
-        <div class="wakeup_msgid">2f613eca-4b2b-4e76-aeac-5b04972d2423</div>
-        <div class="wakeup_state">timed out (contact Sorah for details)</div>
-      </div>
-      -->
-    </div>
-
-    <div class="wakeup-logs">
-      <ul>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<a class="twitter-timeline" href="https://twitter.com/hashtag/sorah_wakeup" data-widget-id="663070216822243328">#sorah_wakeup Tweets</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-<div class="wakeup-debug">
-  <pre><code class="wakeup-debug-body">
-  </code></pre>
-</div>
-
-
+  </body>
+</html>

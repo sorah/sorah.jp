@@ -8,6 +8,10 @@ pre, code {
   font-family: 'Source Code Pro', 'Monaco', monospace;
 }
 
+pre {
+  word-wrap: break-word;
+}
+
 body, p {
   font-size: 20px;
   color: $text;
@@ -123,6 +127,10 @@ body > header {
   margin-left: auto;
   margin-top: 15px;
   margin-right: auto;
+  text-align: left;
+}
+
+#container-fluid {
   text-align: left;
 }
 
