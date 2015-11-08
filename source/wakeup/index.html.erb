@@ -115,6 +115,10 @@ layout: false
           padding: 6px 12px;
           padding-top: 6px;
         }
+
+        .wakeup-desc {
+          font-size: 16px;
+        }
       </style>
 
       <div class="wakeup-pane wakeup_loading">
@@ -154,6 +158,13 @@ layout: false
             </ul>
           </div>
         </div>
+      </div>
+
+      <div class="wakeup-desc">
+        <ul>
+          <li>"Wake up" button involves iTunes play (with maximum volume) in @sorah's home and multiple twitter mentions.</li>
+          <li>Technically, <a href="https://github.com/sorah/sorah.jp/tree/master/source/wakeup">this page</a> is using Amazon Coginto, S3, SQS. @sorah's machine is running <a href="https://github.com/sorah/config/blob/master/script/wakeup/wakeup.rb">SQS polling script</a>.</li>
+        </ul>
       </div>
 
       <a class="twitter-timeline" href="https://twitter.com/hashtag/sorah_wakeup" data-widget-id="663070216822243328">#sorah_wakeup Tweets</a>
