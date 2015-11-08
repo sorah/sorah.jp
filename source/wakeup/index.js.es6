@@ -31,6 +31,7 @@ jQuery(($) => {
   };
 
   let signalReady = () => {
+    updateDebug({readyStatus: "ready"});
     $('.wakeup-pane').removeClass('wakeup_loading');
     $('.wakeup-pane').addClass('wakeup_ready');
   }
@@ -111,12 +112,16 @@ jQuery(($) => {
     $('.wakeup-logs ul').prepend(logElems);
   };
 
+  let setupWakeupResult = (msgId) => {
+    var elem = $('<div>').addClass('wakeup-result').addClass('wakeup-result-waiting').append($('<div>').addClass('wakeup_msgid').text(msgId)).append($('<div>').addClass('wakeup_state').text('waiting')).attr('data-msgid', msgId);
+    $('.wakeup-results').prepend(elem);
+  }
+
   let trackWakeupResult = (msgId) => {
     trackingMessageIds[msgId] = true;
     updateDebug({trackingMessageIds: trackingMessageIds})
 
-    var elem = $('<div>').addClass('wakeup-result').addClass('wakeup-result-waiting').append($('<div>').addClass('wakeup_msgid').text(msgId)).append($('<div>').addClass('wakeup_state').text('waiting'));
-    $('.wakeup-results').prepend(elem);
+    let elem = $(`.wakeup-results .wakeup-result[data-msgid="${msgId}"]`);
 
     trackingWakeupResult(msgId, elem, 1);
   };
@@ -174,11 +179,14 @@ jQuery(($) => {
         elemBody.text(`timed out (contact Sorah for details)`);
         break;
     }
+
+    $('.wakeup-button').removeProp('disabled');
   };
 
   // -----
 
   let sendWakeupRequest = () => {
+    $('.wakeup-button').prop('disabled', true);
     sqs.sendMessage({
       QueueUrl: sqsQueueUrl,
       MessageBody: '{}',
@@ -189,7 +197,10 @@ jQuery(($) => {
         return;
       }
       console.log('sendWakeupRequest resp', data);
+
+      setupWakeupResult(data.MessageId);
       setTimeout(() => { trackWakeupResult(data.MessageId) }, 1500);
+
       updateDebug({sendWakeupRequestError: null, lastRequestMessageId: data.MessageId});
     });
   }
@@ -198,8 +209,10 @@ jQuery(($) => {
   // -----
 
   let getAwsCredentials = () => {
+    updateDebug({readyStatus: "getAwsCredentials"});
     return new Promise((resolve, reject) => {
       cred.get((err) => {
+        updateDebug({readyStatus: "getAwsCredentials-callback"});
         if (err) {
           console.log("Error while getting CognitoId", err);
           updateDebug({cognitoIdError: err});
@@ -216,18 +229,22 @@ jQuery(($) => {
   }
 
   let startGettingCurrentTrack = () => {
+      updateDebug({readyStatus: "startGettingCurrentTrack"});
     getCurrentTrack();
     return null;
   };
 
   let startGettingLogs = () => {
+    updateDebug({readyStatus: "startGettingLogs"});
     // getLog();
     return null;
   };
 
   let getQueueUrl = () => {
+    updateDebug({readyStatus: "getQueueUrl"});
     return new Promise((resolve, reject) => {
       sqs.getQueueUrl({QueueName: SQS_QUEUE_NAME}, (err, resp) => {
+        updateDebug({readyStatus: "getQueueUrl-callback"});
         if (err) {
           console.log("Error while getQueueUrl", err);
           updateDebug({getQueueUrlError: err});
