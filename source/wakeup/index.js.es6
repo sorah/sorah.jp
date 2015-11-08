@@ -78,10 +78,14 @@ jQuery(($) => {
         return;
       }
       console.log("Current track", data);
-      $('.wakeup-current').text(`Current track: ${data.Body.toString()}`);
+      renderCurrentTrack(data.Body.toString());
       updateDebug({getCurrentTrackError: null, currentTrack: {got: new Date(), last: data.LastModified}, getCurrentTrackInterval: getCurrentTrackInterval});
       setTimeout(getCurrentTrack, getCurrentTrackInterval * 1000);
     });
+  };
+
+  let renderCurrentTrack = (cur) => {
+    $('.wakeup-current').text(`Current track: ${cur}`);
   };
 
   let getLog = () => {
@@ -168,6 +172,7 @@ jQuery(($) => {
     switch(result.kind) {
       case "ack":
         elemBody.text(`ack: ${result.track}`);
+        renderCurrentTrack(result.track);
         break;
       case "skip":
         elemBody.text(`skip: ${result.reason}`);
