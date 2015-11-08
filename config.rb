@@ -73,7 +73,7 @@ activate :s3_sync do |s3_sync|
   s3_sync.version_bucket             = false
 end
 
-default_caching_policy public: true, max_age: 60 * 60 * 24, must_revalidate: true
+# default_caching_policy public: true, max_age: 60 * 60 * 24, must_revalidate: true
 caching_policy 'text/css', public: true, max_age: 60 * 60 * 24 * 2, must_revalidate: false
 
 %w(application/x-font-opentype application/font-sfnt application/vnd.ms-fontobject application/font-woff).each do |type|
