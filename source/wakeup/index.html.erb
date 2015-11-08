@@ -119,10 +119,27 @@ layout: false
         .wakeup-desc {
           font-size: 16px;
         }
+
+        .wakeup-pane.wakeup_agentup .wakeup-downalert {
+          display: none;
+        }
+
+        .wakeup-downalert {
+          border: 2px solid red;
+          border-radius: 3px;
+          padding: 6px 12px;
+          font-size: 22px;
+          font-weight: bold;
+          margin-bottom: 50px;
+        }
       </style>
 
-      <div class="wakeup-pane wakeup_loading">
+      <div class="wakeup-pane wakeup_loading wakeup_agentup">
         <div class="wakeup-loading-msg">Preparing...</div>
+        <div class="wakeup-downalert">
+          Looks like agent is down! Please <a href="https://twitter.com/intent/tweet?text=@sora_h+your+wakeup+agent+seems+to+be+down&hashtags=sorah_wakeup">report to @sora_h</a>
+        </div>
+
         <div class="wakeup-main">
           <button class="wakeup-button">Wake up!</button>
           <div class="wakeup-current">

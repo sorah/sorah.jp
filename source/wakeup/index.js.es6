@@ -77,15 +77,30 @@ jQuery(($) => {
         setTimeout(getCurrentTrack, getCurrentTrackInterval * 1000);
         return;
       }
+
+      let lastModified = new Date(data.LastModified);
+
       console.log("Current track", data);
+
       renderCurrentTrack(data.Body.toString());
-      updateDebug({getCurrentTrackError: null, currentTrack: {got: new Date(), last: data.LastModified}, getCurrentTrackInterval: getCurrentTrackInterval});
+      determineAgentDown(lastModified);
+
+      updateDebug({getCurrentTrackError: null, currentTrack: {got: new Date(), last: lastModified}, getCurrentTrackInterval: getCurrentTrackInterval});
       setTimeout(getCurrentTrack, getCurrentTrackInterval * 1000);
     });
   };
 
   let renderCurrentTrack = (cur) => {
     $('.wakeup-current').text(`Current track: ${cur}`);
+  };
+
+  let determineAgentDown = (cur) => {
+    let down = ((new Date()) - cur) > 180000;
+    if (down) {
+      $('.wakeup-pane').removeClass('wakeup_agentup');
+    } else {
+      $('.wakeup-pane').addClass('wakeup_agentup');
+    }
   };
 
   let getLog = () => {
