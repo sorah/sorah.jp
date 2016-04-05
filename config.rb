@@ -1,3 +1,4 @@
+require 'aws-sdk'
 ###
 # Compass
 ###
@@ -62,6 +63,9 @@ activate :es6
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = 'sorah.jp'
   s3_sync.region                     = 'ap-northeast-1'
+  cred = Aws::CredentialProviderChain.new.resolve.credentials
+  s3_sync.aws_access_key_id          = cred.access_key_id
+  s3_sync.aws_secret_access_key      = cred.secret_access_key
   s3_sync.delete                     = true
   s3_sync.after_build                = false
   s3_sync.prefer_gzip                = true

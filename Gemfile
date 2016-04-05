@@ -6,3 +6,5 @@ gem "middleman-es6", git: "https://github.com/vast/middleman-es6.git"
 gem "middleman-s3_sync", "< 4"
 
 gem 'redcarpet'
+
+gem 'aws-sdk'

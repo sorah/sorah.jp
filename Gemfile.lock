@@ -17,6 +17,12 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     ansi (1.5.0)
+    aws-sdk (2.2.31)
+      aws-sdk-resources (= 2.2.31)
+    aws-sdk-core (2.2.31)
+      jmespath (~> 1.0)
+    aws-sdk-resources (2.2.31)
+      aws-sdk-core (= 2.2.31)
     babel-source (5.8.33)
     babel-transpiler (0.7.0)
       babel-source (>= 4.0, < 6)
@@ -75,7 +81,10 @@ GEM
       uber (~> 0.0.14)
     i18n (0.7.0)
     ipaddress (0.8.0)
+    jmespath (1.2.3)
+      json_pure (>= 1.8.1)
     json (1.8.3)
+    json_pure (1.8.3)
     kramdown (1.9.0)
     listen (3.0.4)
       rb-fsevent (>= 0.9.3)
@@ -171,10 +180,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-sdk
   middleman (~> 3.4.0)
   middleman-es6!
   middleman-s3_sync (< 4)
   redcarpet
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
