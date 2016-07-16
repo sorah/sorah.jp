@@ -27,7 +27,7 @@ Ubuntu (amd64): xenial, trusty
   - `1:2.2.4+0nkmi1~trusty`, `1:2.2.4+0nkmi1~xenial`
   - `1:2.3.0+4nkmi2~trusty`, `1:2.3.0+4nkmi2~xenial`
 - [ruby2.3](https://github.com/sorah-rbpkg/ruby/releases) (ruby2.3, libruby2.3, ruby2.3-gems, libruby2.3-dbg, ruby2.3-dev, ruby2.3-doc)
-  - `2.3.1-5nkmi3~trusty`, `2.3.1-5nkmi3~xenial`
+  - `2.3.1-5nkmi5~trusty`, `2.3.1-5nkmi5~xenial`
 - [ruby2.2](https://github.com/sorah-rbpkg/ruby/releases) (ruby2.2, libruby2.2, libruby2.2-dbg, ruby2.2-dev, ruby2.2-doc)
   - `2.2.5-0nkmi2~trusty`, `2.2.5-0nkmi2~xenial`
 - [ruby2.1](https://github.com/sorah-rbpkg/ruby/releases) (ruby2.1, libruby2.1, libruby2.1-dbg, ruby2.l-dev, ruby2.1-doc)
