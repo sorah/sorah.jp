@@ -16,7 +16,7 @@ deb https://cache.ruby-lang.org/~sorah/deb/ trusty main
 deb https://cache.ruby-lang.org/~sorah/deb/ xenial main
 ```
 
-This is sorah's repo, note that NOT OFFICIALLY SUPPORTED by ruby core team.
+Note: this repository is NOT SUPPORTED by Ruby core team. Maintained by sorah.
 
 #### Packages
 
