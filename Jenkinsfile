@@ -15,4 +15,9 @@ pipeline {
       }
     }
   }
+  post {
+    always {
+      postNotifySlack currentBuild
+    }
+  }
 }
