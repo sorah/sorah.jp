@@ -1,4 +1,4 @@
-# vim: ft=groovy
+// vim: ft=groovy
 @Library("github.com/sorah/jenkinsfile-slack@master")
 
 pipeline {
