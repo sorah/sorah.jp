@@ -1,0 +1,60 @@
+---
+title: Software Repositories - sorah.jp
+---
+
+Sorah (nekom.it) maintains some binary packages and its repositories.
+
+## Debian Packages
+
+### sorah-rbpkg repo
+
+- https://github.com/sorah-rbpkg
+- Key: [sorah-rbpkg (3F0F56A8)](./3F0F56A8.pub.txt)
+
+```
+deb https://cache.ruby-lang.org/lab/sorah/deb/ trusty main
+deb https://cache.ruby-lang.org/lab/sorah/deb/ xenial main
+```
+
+Note: this repository is NOT SUPPORTED by entire Ruby core team. Maintained by Sorah, a Ruby committer, individually.
+
+#### Packages
+
+Ubuntu (amd64)
+
+<%- data.ruby_deb.each do |dist, sources| -%>
+- <%= dist %>
+<%- sources.each do |source, packages| -%>
+<%- source_repo = source -%>
+<%- source_repo = 'ruby' if /^ruby\d\./ === source -%>
+  - [<%= source %>](https://github.com/sorah-rbpkg/<%= source_repo %>/releases) (<%= packages.keys.join(", ") %>)
+<%- [packages.values.first.versions.first].each do |version| -%>
+     - `<%= version %>`
+<%- end -%>
+<%- end -%>
+<%- end -%>
+
+Versions may inaccurate, check `apt-cache show-policy` or refer [https://github.com/sorah-rbpkg](Release page of each repositories)
+
+### nekomit-originals repo
+
+- https://github.com/nkmideb
+- https://bintray.com/nekomit/deb-originals
+- Key: [nekomit-bintray (C3FF3305)](./C3FF3305.pub.txt)
+
+```
+deb https://dl.bintray.com/nekomit/deb-originals trusty main
+deb https://dl.bintray.com/nekomit/deb-originals xenial main
+```
+
+#### Packages
+
+- envchain https://github.com/nkmideb/envchain (source: https://github.com/sorah/envchain )
+  - Ubuntu (amd64): xenial, trusty
+
+## Disclaimer
+
+ALL FILES IN THESE REPOSITORIES ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+<!-- vim: ft=markdown
+-->
