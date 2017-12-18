@@ -15,7 +15,7 @@ pipeline {
       }
     }
     stage('Deploy') {
-      when { branch 'master' }
+      // when { branch 'master' }
       steps { sh 'bundle exec middleman s3_sync' }
     }
   }
