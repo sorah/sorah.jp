@@ -17,7 +17,7 @@ pipeline {
   }
   post {
     always {
-      echo currentBuild.status
+      postNotifySlack currentBuild.result
     }
   }
 }
