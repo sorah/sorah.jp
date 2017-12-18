@@ -1,5 +1,5 @@
 // vim: ft=groovy
-@Library("github.com/sorah/jenkinsfile-slack@master")
+@Library("github.com/sorah/jenkinsfile-slack@master") _
 
 pipeline {
   agent { node }
