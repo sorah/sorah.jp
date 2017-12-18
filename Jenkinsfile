@@ -14,6 +14,10 @@ pipeline {
         sh 'bundle exec middleman build'
       }
     }
+    stage('Deploy') {
+      when { branch 'master' }
+      steps { sh 'bundle exec middleman s3_sync' }
+    }
   }
   post {
     always {
