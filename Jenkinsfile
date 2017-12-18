@@ -2,7 +2,7 @@
 @Library("github.com/sorah/jenkinsfile-slack@master") _
 
 pipeline {
-  agent { node }
+  agent any
   stages {
     stage('Prepare') {
       steps {
