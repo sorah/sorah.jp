@@ -22,7 +22,7 @@ Note: this repository is NOT SUPPORTED by entire Ruby core team. Maintained by S
 
 Ubuntu (amd64)
 
-<%- data.ruby_deb.each do |dist, sources| -%>
+<%- data.deb.ruby.each do |dist, sources| -%>
 - <%= dist %>
 <%- sources.each do |source, packages| -%>
 <%- source_repo = source -%>

@@ -11,7 +11,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        sh 'bundle exec bin/fetch-ruby-deb.rb'
+        sh 'bundle exec bin/fetch-deb.rb'
         sh 'bundle exec middleman build'
       }
     }
