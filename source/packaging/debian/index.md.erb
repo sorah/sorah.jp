@@ -39,18 +39,26 @@ Versions may inaccurate, check `apt-cache show-policy` or refer [Release page of
 ### nekomit-originals repo
 
 - https://github.com/nkmideb
-- https://bintray.com/nekomit/deb-originals
+- https://deb.nekom.it/
 - Key: [nekomit-bintray (C3FF3305)](./C3FF3305.pub.txt)
 
 ```
-deb https://dl.bintray.com/nekomit/deb-originals trusty main
-deb https://dl.bintray.com/nekomit/deb-originals xenial main
+deb https://deb.nekom.it/ trusty main
+deb https://deb.nekom.it/ xenial main
 ```
 
 #### Packages
 
-- envchain https://github.com/nkmideb/envchain (source: https://github.com/sorah/envchain )
-  - Ubuntu (amd64): xenial, trusty
+<%- data.deb.nekomit.each do |dist, sources| -%>
+- <%= dist %>
+<%- sources.each do |source, packages| -%>
+<%- source_repo = source -%>
+  - [<%= source %>](https://github.com/nkmideb/<%= source_repo %>/releases) (<%= packages.keys.join(", ") %>)
+<%- [packages.values.first.versions.first].each do |version| -%>
+     - `<%= version %>`
+<%- end -%>
+<%- end -%>
+<%- end -%>
 
 ## Disclaimer
 
