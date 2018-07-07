@@ -12,6 +12,7 @@ repos = {
   nekomit: {
     xenial: 'https://deb.nekom.it/dists/xenial/main/binary-amd64/Packages',
     trusty: 'https://deb.nekom.it/dists/trusty/main/binary-amd64/Packages',
+    bionic: 'https://deb.nekom.it/dists/bionic/main/binary-amd64/Packages',
   }
 }
 
