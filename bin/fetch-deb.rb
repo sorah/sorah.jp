@@ -8,6 +8,7 @@ repos = {
   ruby: {
     xenial: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/xenial/main/binary-amd64/Packages',
     trusty: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/trusty/main/binary-amd64/Packages',
+    bionic: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/bionic/main/binary-amd64/Packages',
   },
   nekomit: {
     xenial: 'https://deb.nekom.it/dists/xenial/main/binary-amd64/Packages',
