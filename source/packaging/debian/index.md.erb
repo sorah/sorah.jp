@@ -8,15 +8,82 @@ Sorah (nekom.it) maintains some binary packages and its repositories.
 
 ### sorah-rbpkg repo
 
-- https://github.com/sorah-rbpkg
+- Source: https://github.com/sorah-rbpkg
 - Key: [sorah-rbpkg (3F0F56A8)](./3F0F56A8.pub.txt)
 
 ```
 deb https://cache.ruby-lang.org/lab/sorah/deb/ trusty main
 deb https://cache.ruby-lang.org/lab/sorah/deb/ xenial main
+deb https://cache.ruby-lang.org/lab/sorah/deb/ bionic main
+deb https://cache.ruby-lang.org/lab/sorah/deb/ stretch main
 ```
 
-Note: this repository is NOT SUPPORTED by entire Ruby core team. Maintained by Sorah, a Ruby committer, individually.
+Note: this repository is NOT SUPPORTED by Ruby core team. Maintained by Sorah, a Ruby committer, individually.
+
+#### Support status
+
+<table>
+  <thead>
+    <tr>
+      <td>Series</td>
+      <td>u14.04 trusty</td>
+      <td>u16.04 xenial</td>
+      <td>u18.04 bionic</td>
+      <td>d9 stretch</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2.1</td>
+      <td>x</td>
+      <td>x</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.2</td>
+      <td>x</td>
+      <td>x</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.3</td>
+      <td>o</td>
+      <td>o</td>
+      <td>o</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.4</td>
+      <td>o</td>
+      <td>o</td>
+      <td>o</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>2.5</td>
+      <td>o</td>
+      <td>o</td>
+      <td>o</td>
+      <td>o</td>
+    </tr>
+    <tr>
+      <td>2.6</td>
+      <td> </td>
+      <td>o</td>
+      <td>o</td>
+      <td>o</td>
+    </tr>
+  </tbody>
+</table>
+
+o = supported, x = EOL; abandoned, (unmarked) = no package exists.
+
+* Unless the above table is updated, [the supported ruby branches](https://www.ruby-lang.org/en/downloads/branches/) are only the supported branches.
+* I will build the packages of the new Ruby series, only for the modern distros. Older distros could not be supported even they're still supported from the distributor.
+* Vice versa, the older Ruby series could not be provided for the modern distros.
+* I may give up the support earlier than the Ruby team's official support status and the distro support status.
 
 #### Packages
 
