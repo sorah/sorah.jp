@@ -572,7 +572,7 @@ GEM
     compass-import-once (1.0.5)
       sass (>= 3.2, < 3.5)
     erubis (2.7.0)
-    excon (0.60.0)
+    excon (0.71.0)
     execjs (2.7.0)
     ffi (1.9.18)
     fog-aws (2.0.0)
