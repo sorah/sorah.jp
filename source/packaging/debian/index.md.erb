@@ -81,8 +81,12 @@ Ubuntu (amd64)
 <%- sources.each do |source, packages| -%>
 <%- source_repo = source -%>
 <%- source_repo = 'ruby' if /^ruby\d\./ === source -%>
+
+<%- versions = packages.values.first.versions -%>
+<%- versions = [versions.first] if source != 'ruby-defaults' -%>
+
   - [<%= source %>](https://github.com/sorah-rbpkg/<%= source_repo %>/releases) (<%= packages.keys.join(", ") %>)
-<%- [packages.values.first.versions.first].each do |version| -%>
+<%- versions.each do |version| -%>
      - `<%= version %>`
 <%- end -%>
 <%- end -%>
@@ -109,7 +113,6 @@ deb https://deb.nekom.it/ xenial main
 <%- source_repo = source -%>
   - [<%= source %>](https://github.com/nkmideb/<%= source_repo %>/releases) (<%= packages.keys.join(", ") %>)
 <%- versions = packages.values.first.versions -%>
-<%- versions = [versions.first] if source != 'ruby-defaults' -%>
 <%- versions.each do |version| -%>
      - `<%= version %>`
 <%- end -%>
