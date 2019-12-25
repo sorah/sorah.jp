@@ -16,6 +16,7 @@ deb https://cache.ruby-lang.org/lab/sorah/deb/ trusty main
 deb https://cache.ruby-lang.org/lab/sorah/deb/ xenial main
 deb https://cache.ruby-lang.org/lab/sorah/deb/ bionic main
 deb https://cache.ruby-lang.org/lab/sorah/deb/ stretch main
+deb https://cache.ruby-lang.org/lab/sorah/deb/ buster main
 ```
 
 Note: this repository is NOT SUPPORTED by Ruby core team. Maintained by Sorah, a Ruby committer, individually.
@@ -30,49 +31,35 @@ Note: this repository is NOT SUPPORTED by Ruby core team. Maintained by Sorah, a
       <td>u16.04 xenial</td>
       <td>u18.04 bionic</td>
       <td>d9 stretch</td>
+      <td>d10 buster</td>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>2.1</td>
-      <td>x</td>
-      <td>x</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>2.2</td>
-      <td>x</td>
-      <td>x</td>
-      <td> </td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>2.3</td>
-      <td>o</td>
-      <td>o</td>
-      <td>o</td>
-      <td> </td>
-    </tr>
-    <tr>
-      <td>2.4</td>
-      <td>o</td>
-      <td>o</td>
-      <td>o</td>
-      <td> </td>
-    </tr>
     <tr>
       <td>2.5</td>
       <td>o</td>
       <td>o</td>
       <td>o</td>
+      <!-- ^ubuntu^ -->
       <td>o</td>
+      <td> </td>
     </tr>
     <tr>
       <td>2.6</td>
       <td> </td>
       <td>o</td>
       <td>o</td>
+      <!-- ^ubuntu^ -->
+      <td>o</td>
+      <td>o</td>
+    </tr>
+    <tr>
+      <td>2.7</td>
+      <td> </td>
+      <td>o</td>
+      <td>o</td>
+      <!-- ^ubuntu^ -->
+      <td> </td>
       <td>o</td>
     </tr>
   </tbody>
@@ -121,7 +108,9 @@ deb https://deb.nekom.it/ xenial main
 <%- sources.each do |source, packages| -%>
 <%- source_repo = source -%>
   - [<%= source %>](https://github.com/nkmideb/<%= source_repo %>/releases) (<%= packages.keys.join(", ") %>)
-<%- [packages.values.first.versions.first].each do |version| -%>
+<%- versions = packages.values.first.versions -%>
+<%- versions = [versions.first] if source != 'ruby-defaults' -%>
+<%- versions.each do |version| -%>
      - `<%= version %>`
 <%- end -%>
 <%- end -%>

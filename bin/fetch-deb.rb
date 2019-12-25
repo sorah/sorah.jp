@@ -10,6 +10,7 @@ repos = {
     trusty: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/trusty/main/binary-amd64/Packages',
     bionic: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/bionic/main/binary-amd64/Packages',
     stretch: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/stretch/main/binary-amd64/Packages',
+    buster: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/buster/main/binary-amd64/Packages',
   },
   nekomit: {
     xenial: 'https://deb.nekom.it/dists/xenial/main/binary-amd64/Packages',
