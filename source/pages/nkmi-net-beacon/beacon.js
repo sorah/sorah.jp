@@ -7,6 +7,7 @@
     "cf": "https://img.sorah.jp/ping.gif"
   };
   const resultEndpoint = "https://beacon-collect.nkmi.net/collect.gif";
+  const resultEndpoint6 = "https://beacon-collect6.nkmi.net/collect.gif";
 
   const sleepDuration = 2500;
 
@@ -49,6 +50,9 @@
     const reportUrl = `${resultEndpoint}?${qs.join("&")}`;
     window.sorahJpReportImage = new Image();
     window.sorahJpReportImage.src = reportUrl;
+    const reportUrl6 = `${resultEndpoint6}?${qs.join("&")}`;
+    window.sorahJpReportImage6 = new Image();
+    window.sorahJpReportImage6.src = reportUrl6;
   };
 
   const gatherResultForBeacon = function (beaconName) {
