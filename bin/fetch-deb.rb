@@ -6,20 +6,25 @@ require 'fileutils'
 
 repos = {
   ruby: {
-    xenial: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/xenial/main/binary-amd64/Packages',
-    trusty: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/trusty/main/binary-amd64/Packages',
-    bionic: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/bionic/main/binary-amd64/Packages',
+    #xenial: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/xenial/main/binary-amd64/Packages',
+    #trusty: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/trusty/main/binary-amd64/Packages',
+    #bionic: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/bionic/main/binary-amd64/Packages',
     focal: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/focal/main/binary-amd64/Packages',
-    stretch: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/stretch/main/binary-amd64/Packages',
+    jammy: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/jammy/main/binary-amd64/Packages',
+    #stretch: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/stretch/main/binary-amd64/Packages',
     buster: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/buster/main/binary-amd64/Packages',
+    bullseye: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/bullseye/main/binary-amd64/Packages',
+    bookworm: 'https://cache.ruby-lang.org/lab/sorah/deb/dists/bookworm/main/binary-amd64/Packages',
   },
   nekomit: {
-    xenial: 'https://deb.nekom.it/dists/xenial/main/binary-amd64/Packages',
-    trusty: 'https://deb.nekom.it/dists/trusty/main/binary-amd64/Packages',
-    bionic: 'https://deb.nekom.it/dists/bionic/main/binary-amd64/Packages',
+    #xenial: 'https://deb.nekom.it/dists/xenial/main/binary-amd64/Packages',
+    #trusty: 'https://deb.nekom.it/dists/trusty/main/binary-amd64/Packages',
+    #bionic: 'https://deb.nekom.it/dists/bionic/main/binary-amd64/Packages',
     focal: 'https://deb.nekom.it/dists/focal/main/binary-amd64/Packages',
+    jammy: 'https://deb.nekom.it/dists/jammy/main/binary-amd64/Packages',
     stretch: 'https://deb.nekom.it/dists/stretch/main/binary-amd64/Packages',
     buster: 'https://deb.nekom.it/dists/buster/main/binary-amd64/Packages',
+    bullseye: 'https://deb.nekom.it/dists/bullseye/main/binary-amd64/Packages',
   }
 }
 
