@@ -1,4 +1,3 @@
-require 'aws-sdk'
 ###
 # Compass
 ###
@@ -61,8 +60,6 @@ configure :build do
   # set :http_prefix, "/Content/images/"
 end
 
-activate :es6
-
 activate :s3_sync do |s3_sync|
   s3_sync.bucket                     = 'sorah.jp'
   s3_sync.region                     = 'ap-northeast-1'
@@ -81,6 +78,6 @@ end
 # default_caching_policy public: true, max_age: 60 * 60 * 24, must_revalidate: true
 caching_policy 'text/css', public: true, max_age: 60 * 60 * 24 * 2, must_revalidate: false
 
-%w(application/x-font-opentype application/font-sfnt application/vnd.ms-fontobject application/font-woff).each do |type|
+%w(application/x-font-opentype application/font-sfnt application/vnd.ms-fontobject application/font-woff font/woff2 font/woff).each do |type|
   caching_policy type, public: true, max_age: 60 * 60 * 24 * 7, must_revalidate: false
 end
