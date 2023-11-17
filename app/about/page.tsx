@@ -627,7 +627,7 @@ export default async function AboutPage() {
         </section>
 
         <section id="contributions">
-          <h2>Selected Activities and Affilications</h2>
+          <h2>Selected Activities and Affiliations</h2>
 
           <div>
             <section id="contrib_rk">
