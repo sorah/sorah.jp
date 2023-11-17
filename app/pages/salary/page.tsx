@@ -1,3 +1,7 @@
+import {
+  styleCompensationSection,
+  styleCompensationTable,
+} from "@/styles/SalaryPage.css";
 import { styleEntryContent } from "@/styles/blog/EntryView.css";
 import { stylePageMain } from "@/styles/page.css";
 
@@ -60,8 +64,8 @@ export default async function SalaryPage() {
           <h1>{"Sorah's Compensation (Salary)"}</h1>
         </header>
 
-        <section>
-          <table>
+        <section className={styleCompensationSection}>
+          <table className={styleCompensationTable}>
             <thead>
               <tr>
                 <th>Since</th>
