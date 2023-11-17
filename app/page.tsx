@@ -101,7 +101,7 @@ export default async function Home() {
           </ul>
         </nav>
         <p className={styleMainBio}>
-          <Link href="/about.html">More →</Link>
+          <Link href="/about">More →</Link>
         </p>
       </div>
     </main>

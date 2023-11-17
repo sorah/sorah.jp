@@ -20,6 +20,7 @@ import {
   SiSpeakerdeck,
   SiTwitter,
 } from "@icons-pack/react-simple-icons";
+import Link from "next/link";
 
 export default async function AboutPage() {
   return (
@@ -141,7 +142,7 @@ export default async function AboutPage() {
           </div>
 
           <p>
-            <a href="id.html">More →</a>
+            <Link href="/id">More →</Link>
           </p>
         </section>
         <section id="pro_experiences">
