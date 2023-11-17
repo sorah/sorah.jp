@@ -1,0 +1,33 @@
+name: ci
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    concurrency:
+      group: 'prd-deploy'
+    permissions:
+      contents: "read"
+      id-token: "write"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-region: us-west-2
+          role-skip-session-tagging: true
+          role-to-assume: "arn:aws:iam::341857463381:role/gha-blog"
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      - run: 'npx next build'
+      - run: 'rsync -r public/ out'
+      - run: 'ruby upload.rb out "prd/" "sorah-jp"'
+
