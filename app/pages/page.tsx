@@ -1,7 +1,13 @@
 import { styleFooterLi } from "@/styles/PagesPage.css";
 import { styleEntryContent } from "@/styles/blog/EntryView.css";
 import { stylePageMain } from "@/styles/page.css";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Pages",
+  description: null,
+};
 
 export default async function PagesPage() {
   return (

@@ -5,6 +5,11 @@ import {
 import { styleEntryContent } from "@/styles/blog/EntryView.css";
 import { stylePageMain } from "@/styles/page.css";
 
+export const metadata: Metadata = {
+  title: "Compensation (Salary)",
+  description: "Sorah Fukumori's Compensation data",
+};
+
 type CompensationEntry = {
   year: number;
   month?: number;

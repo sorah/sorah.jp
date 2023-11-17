@@ -30,6 +30,12 @@ import {
   SiUntappd,
   SiWikipedia,
 } from "@icons-pack/react-simple-icons";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Links",
+  description: "Sorah Fukumori's links",
+};
 
 export default async function IdsPage() {
   return (

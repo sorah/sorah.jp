@@ -1,5 +1,11 @@
 import { styleEntryContent } from "@/styles/blog/EntryView.css";
 import { stylePageMain } from "@/styles/page.css";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Debian Packages",
+  description: "Sorah Fukumori's Debian Packages information",
+};
 
 export default async function DebianPage() {
   return (

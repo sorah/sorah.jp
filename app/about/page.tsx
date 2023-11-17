@@ -20,7 +20,13 @@ import {
   SiSpeakerdeck,
   SiTwitter,
 } from "@icons-pack/react-simple-icons";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "About and Resume",
+  description: "Sorah Fukumori's Resume",
+};
 
 export default async function AboutPage() {
   return (
