@@ -1,3 +1,4 @@
+import { styleFooterLi } from "@/styles/PagesPage.css";
 import { styleEntryContent } from "@/styles/blog/EntryView.css";
 import { stylePageMain } from "@/styles/page.css";
 import Link from "next/link";
@@ -12,10 +13,10 @@ export default async function PagesPage() {
 
         <nav>
           <ul>
-            <li>
+            <li className={styleFooterLi}>
               <Link href="/pages/debian">Sorah's Debian Packages</Link>
             </li>
-            <li>
+            <li className={styleFooterLi}>
               <Link href="/pages/salary">Sorah's Compensation (Salary)</Link>
             </li>
           </ul>

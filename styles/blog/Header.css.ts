@@ -1,5 +1,6 @@
-import { style } from "@vanilla-extract/css";
+import { globalStyle, style } from "@vanilla-extract/css";
 import { contentWidthMixin } from "./fundamental.css";
+import { responsiveStyle } from "./functions";
 
 export const styleHeader = style([
   contentWidthMixin,
@@ -26,8 +27,19 @@ export const styleHeaderH1 = style([
 export const styleHeaderNav = style([
   styleHeaderText,
   {
-    textAlign: "right",
+    display: "flex",
   },
+]);
+globalStyle(`${styleHeaderNav} > div`, {
+  marginLeft: "0.5em",
+});
+
+export const styleHeaderNavMobileHidden = style([
+  responsiveStyle({
+    mobile: {
+      display: "none",
+    },
+  }),
 ]);
 
 export const styleHeaderBrandLink = style({ textDecoration: "none" });
