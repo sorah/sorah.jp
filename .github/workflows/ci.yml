@@ -28,6 +28,13 @@ jobs:
         with:
           node-version: '20'
           cache: 'npm'
+      - uses: actions/cache@v3
+        with:
+          path: |
+            ${{ github.workspace }}/.next/cache
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
       - run: 'npm ci'
       - run: 'npx next build'
       - run: 'rsync -r public/ out'
