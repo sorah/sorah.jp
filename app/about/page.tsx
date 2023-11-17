@@ -462,6 +462,12 @@ export default async function AboutPage() {
                   chat) for <a href="https://rubykaigi.org">RubyKaigi</a>. Built
                   using Rails, React, Amazon Chime SDK, and Amazon IVS.
                 </li>
+                <li>
+                  Details posted on AWS Blog:{" "}
+                  <a href="https://aws.amazon.com/blogs/business-productivity/how-rubykaigi-built-an-event-site-in-days-with-the-amazon-chime-sdk-and-amazon-ivs/">
+                    https://aws.amazon.com/blogs/business-productivity/how-rubykaigi-built-an-event-site-in-days-with-the-amazon-chime-sdk-and-amazon-ivs/
+                  </a>
+                </li>
               </ul>
             </section>
             <section id="works_sponsor-app">
