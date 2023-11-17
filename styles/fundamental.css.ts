@@ -35,5 +35,10 @@ export const theme = createTheme(blogThemeVars, {
     leftWidth: "12%",
     rightWidth: "85%",
     headerLrMargin: "20px",
+
+    contentFontSize: "18px",
+    contentFontSizeMobile: "16px",
+    contentLineHeight: `calc(${themeVars.size.contentFontSize} * 1.4)`,
+    contentLineHeightMobile: `calc(${themeVars.size.contentFontSizeMobile} * 1.4)`,
   },
 });

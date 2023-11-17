@@ -1,36 +1,24 @@
 import { Identifier } from "@/components/Identifier";
-import { styleAboutColumns } from "@/styles/AboutPage.css";
+import {
+  styleAboutBioName,
+  styleAboutColumns,
+  styleAboutListMargin,
+} from "@/styles/AboutPage.css";
 import { styleIdentifierList } from "@/styles/Identifier.css";
 import { styleIdsAvatars, styleIdsIds } from "@/styles/IdsPage.css";
 import { styleEntry, styleEntryContent } from "@/styles/blog/EntryView.css";
 import { stylePageMain } from "@/styles/page.css";
 import {
   SiAdobelightroom,
-  SiAmazon,
-  SiCoderwall,
   SiDiscord,
-  SiFacebook,
-  SiFlickr,
-  SiFoursquare,
   SiGithub,
   SiGmail,
-  SiHatenabookmark,
   SiInstagram,
-  SiLastdotfm,
-  SiLaunchpad,
-  SiLine,
   SiLinkedin,
   SiMastodon,
   SiRss,
-  SiSkype,
   SiSpeakerdeck,
-  SiStackoverflow,
-  SiSteam,
-  SiTumblr,
-  SiTwitch,
   SiTwitter,
-  SiUntappd,
-  SiWikipedia,
 } from "@icons-pack/react-simple-icons";
 
 export default async function AboutPage() {
@@ -38,25 +26,40 @@ export default async function AboutPage() {
     <main className={stylePageMain}>
       <article className={styleEntryContent}>
         <section id="bio">
-          <h1>Sorah Fukumori</h1>
-          <div>Software Engineer</div>
-          <div>
-            <span>Also known as:</span> sora_h, soraher, そらは, 福森空葉
-          </div>
+          <header>
+            <h1 className={styleAboutBioName}>Sorah Fukumori</h1>
+            <div>Software Engineer</div>
+          </header>
 
           <p>
-            Rubyist, Rustacean wannabe. Currently working as a SWE on Developer
-            Experiences and corporate IT. Interested in IP network, distributed
-            systems, identity and authentication. Sometimes powering conference
-            with Wi-Fi, organizes a Ruby conference, contributes to Ruby Core,
-            and operates non-commercial BGP AS.
+            Sorah is a Rubyist, and a Rustacean. Sorah has a broad expertise,
+            including: Cloud infrastructure, Security, Digital identity &amp;
+            authentication, Network. And is capable to act as a{" "}
+            <i>full-stack</i> engineer ranging from low-level infrastructure to
+            web frontend. Sorah's currently working as a software enginner of
+            Site Reliability and Corporate Engineering (IT) for{" "}
+            <a href="https://cookpad.com/uk">Cookpad</a>.
           </p>
-          <p>Lives in Tokyo, Japan.</p>
-        </section>
-        <section id="identifications">
-          <h2>Links</h2>
 
-          <div className={styleIdsIds}>
+          <p>
+            During her spare time, Sorah is sometimes powers conference up with
+            Wi-Fi, organizes an international conference on Ruby, contributes to
+            Ruby Core, and operates non-commercial BGP AS{" "}
+            <a href="https://bgp.tools/as/59128">59128</a>.
+          </p>
+
+          <p>
+            <i>
+              <span>Sorah is also known as:</span> sora_h, soraher,
+            </i>{" "}
+            そらは, 福森空葉
+          </p>
+        </section>
+
+        <section id="identifications">
+          <h2>Links and Contacts</h2>
+
+          <div className={styleAboutColumns}>
             <ul className={styleIdentifierList}>
               <li>
                 <Identifier href="mailto:her@sorah.jp">
@@ -72,12 +75,6 @@ export default async function AboutPage() {
                 </Identifier>
               </li>
 
-              <li>
-                <Identifier href="http://twitter.com/sora_h">
-                  <SiTwitter title="Twitter" />
-                  @sora_h
-                </Identifier>
-              </li>
               <li>
                 <Identifier href="https://hachyderm.io/@sorah">
                   <SiMastodon title="Mastodon" />
@@ -96,6 +93,12 @@ export default async function AboutPage() {
                   soraher
                 </Identifier>
               </li>
+              <li>
+                <Identifier href="#">
+                  <SiDiscord title="Discord" />
+                  soraher
+                </Identifier>
+              </li>
 
               <li>
                 <Identifier href="https://blog.sorah.jp/">
@@ -109,7 +112,12 @@ export default async function AboutPage() {
                   diary.sorah.jp
                 </Identifier>
               </li>
-
+              <li>
+                <Identifier href="http://twitter.com/sora_h">
+                  <SiTwitter title="Twitter" />
+                  @sora_h
+                </Identifier>
+              </li>
               <li>
                 <Identifier href="https://speakerdeck.com/u/sorah">
                   <SiSpeakerdeck title="SpeakerDeck" />
@@ -120,13 +128,7 @@ export default async function AboutPage() {
               <li>
                 <Identifier href="https://lightroom.adobe.com/gallery/5d12dab6ef334874937111c4466297c1">
                   <SiAdobelightroom title="Adobe Lightroom Gallery" />
-                  lightroom.adobe.com gallery
-                </Identifier>
-              </li>
-              <li>
-                <Identifier href="#">
-                  <SiDiscord title="Discord" />
-                  soraher
+                  lightroom.adobe.com/gallery
                 </Identifier>
               </li>
               <li>
@@ -147,215 +149,296 @@ export default async function AboutPage() {
 
           <section id="proexp_cookpad">
             <h3>
-              <a href="https://info.cookpad.com/en">Cookpad Inc.</a>
+              <a href="https://cookpad.com/uk">Cookpad Inc.</a>
             </h3>
-            <div>Software Engineer (Developer Experience &amp; IT)</div>
-            <span>April 2012 - present</span>
+            <div>
+              Staff Software Engineer (Site Reliability, Security and Corporate
+              Engineering)
+            </div>
+            <span>April 2012 - Present</span>
             <ul>
               <li>
-                <a href="https://cookpad.com/">Cookpad</a> is the largest recipe
-                sharing platform in the world. I have various roles in the
-                company, to achive my mission that keeping developer and
-                employee experience and productivity high using technologies. I
-                work for both Cookpad Japan and Cookpad Global.
-              </li>
-              <li>
-                <div>
-                  <section id="proexp_cookpad_it">
-                    <h4>Corporate Engineering Team (IT)</h4>
-                    <span>October 2019 - Present</span>
-                    <ul>
-                      <li>
-                        <i>
-                          As I'm interested in employees' experience and
-                          productivity, I belong to the IT team as an additional
-                          role.
-                        </i>
-                      </li>
-                      <li>
-                        Built multi-region Active Directory fleet for LDAP
-                        workloads, along with Azure AD as a primary IDaaS.
-                      </li>
-                      <li>
-                        Built in-house web-based tool to self-manage passwords
-                        and groups in Active Directory.
-                      </li>
-                      <li>
-                        Operated a company tech conference (
-                        <a href="https://techconf.cookpad.com/">
-                          Cookpad TechConf
-                        </a>
-                        ); This includes running Wi-Fi for a large number of
-                        attendees.
-                      </li>
-                      <li>
-                        Contributed to Jamf and Intune setup; Enabled
-                        iOS/Android BYOD based on Intune.
-                      </li>
-                      <li>
-                        Contributed to a corporate IP network; I design and
-                        manage networks on all offices and premises. Moved core
-                        network functions to data center during 2021 office
-                        relocation. Combined with cloud native solutions using
-                        AWS Direct Connect.
-                      </li>
-                      <li>
-                        Contributed to annual global all-hands meetings;
-                        Designed and operated a single live stream with speakers
-                        from various worldwide locations, including premises and
-                        remote.
-                      </li>
-                      <li>
-                        Contributed to office relocation in 2021; Primarily
-                        taking care of network related things, but not limited
-                        to - supported a lot of things by working closely with
-                        board members.
-                      </li>
-                    </ul>
-                  </section>
-
-                  <section id="proexp_cookpad_sre">
-                    <h4>Site Reliablity Engineering Team</h4>
-                    <span>May 2015 - Present</span>
-                    <ul>
-                      <li>
-                        <i>
-                          Site Reliablity Engineering ("SRE Team") is
-                          responsible to site reliablity and aims to automate
-                          operations as much as possible, and keep the
-                          infrastructure up to date.
-                        </i>
-                      </li>
-                      <li>
-                        <i>
-                          SRE team was formerly Infrastructure Team; SRE team
-                          had been splitted to Developer Productivity Team, but
-                          re-merged later; The team was split between July 2020
-                          - June 2021
-                        </i>
-                      </li>
-                      <li>
-                        Designed and built a infrastructure{" "}
-                        <a href="https://cookpad.com/uk">our global services</a>{" "}
-                        from scratch, enhanced use of modern AWS services and
-                        features. (2015)
-                      </li>
-                      <li>
-                        Built a multi-region aware SSH bastion server that a
-                        single connection to a bastion in the closest region can
-                        reach servers in all regions and data centers. (2018)
-                      </li>
-                      <li>
-                        Built a in-house mobile app distribution service
-                        "Haneda"; All employees can install nightly apps or
-                        in-house apps easily into their mobile phones. (2018)
-                      </li>
-                      <li>
-                        Built a in-house service to self-manage AWS IAM user and
-                        console access; This removed human intervention to issue
-                        access keys on their first use. (2018)
-                      </li>
-                      <li>
-                        Designed and built a IoT infrastructure for{" "}
-                        <a href="https://cookpad-mart.com/">Cookpad Mart</a> for
-                        fridges and label printers with{" "}
-                        <a href="https://www.soracom.io/">SORACOM</a>; This
-                        includes Linux base system images for Raspberry Pi with
-                        CI, fleet management service including OTA update
-                        delivery and network infrastructure to connect
-                        server-side systems with deployed IoT devices. (
-                        <a href="https://techlife.cookpad.com/entry/2019/04/10/180000">
-                          blog post
-                        </a>
-                        , 2019)
-                      </li>
-                      <li>
-                        Ran in-house ISUCON contest (performance tuning contest)
-                        to share knowledge of designing and building high
-                        performance web application. (2019)
-                      </li>
-                      <li>
-                        Launched{" "}
-                        <a href="https://www.cookpadstatus.com/">
-                          an user facing service status page
-                        </a>{" "}
-                        to enhance communication between end users, support
-                        team, and SRE team during service outages and issues.
-                        (2020)
-                      </li>
-                      <li>
-                        Proposed and executed legacy TLS deprecation (TLSv1.0
-                        and v1.1), to keep following modern best practices in
-                        the industry. Built a in-house tool to allow service
-                        developers checking legacy TLS usage in their systems,
-                        and turn them off easily. (2020)
-                      </li>
-                      <li>
-                        Contributing a lot of things for daily security
-                        responses like managing CVE fix delivery.
-                      </li>
-                      <li>
-                        Leading various incident responses including security,
-                        for instance I led incident response at{" "}
-                        <a href="https://info.cookpad.com/pr/news/press_2020_0903">
-                          private information exposure in the album feature
-                          (「料理アルバム」における保存写真の表示不具合)
-                        </a>
-                        .
-                      </li>
-                      <li>
-                        Managing a relationship with AWS; Taking care of monthly
-                        meeting, arranging meetings with our developers and AWS
-                        service team.
-                      </li>
-                    </ul>
-                  </section>
-
-                  <section id="proexp_cookpad_dev-infra">
-                    <h4>Development Infrastructure Team</h4>
-                    <span>April 2012 - April 2015</span>
-                    <ul>
-                      <li>
-                        <i>
-                          Development Infrastructure Team aims to improve
-                          developer experiences; Merged to SRE team at Jan 2020.
-                        </i>
-                      </li>
-                      <li>
-                        Developed{" "}
-                        <a href="https://github.com/sorah/mamiya">Mamiya</a>, to
-                        enable fast deployment of large application to large
-                        server fleet.
-                      </li>
-                      <li>
-                        Developed{" "}
-                        <a href="https://github.com/sorah/envchain">Envchain</a>
-                        , which make use of environment environments for secrets
-                        on local development more secure.
-                      </li>
-                    </ul>
-                  </section>
-                </div>
+                Plays various important roles in the company. Responsible for:
+                End-user facing cloud infrastructure and its reliablity,
+                Security, and Employee Productivity (IT and Engineering
+                Platform) in the both Cookpad Japan and Global organisation;{" "}
+                <i>
+                  Note: Cookpad Global develops and operates international
+                  service independently from Japan domestic business.
+                </i>
               </li>
             </ul>
+            <div>
+              <section id="proexp_cookpad_it">
+                <h4>Corporate Engineering Team (a.k.a. IT)</h4>
+                <span>October 2019 - Present</span>
+                <ul className={styleAboutListMargin}>
+                  <li>
+                    Responsible for Security, IdP, MDM, corporate IP network,
+                    and Employee Productivity.
+                  </li>
+
+                  <li>
+                    Delivered a Google Workspace primary domain rename with zero
+                    downtime and confusion, including most of external SaaS used
+                    in the company. (
+                    <a href="https://techlife.cookpad.com/entry/2023/06/28/170451">
+                      Blog post
+                    </a>
+                    , 2023)
+                  </li>
+                  <li>
+                    Contributed to system design of in-house workflow and
+                    inquiries management system; built with Rails, React and AWS
+                    Step Functions. (2023)
+                  </li>
+
+                  <li>
+                    Delivered office relocation to Yokohama; As a part of
+                    responsibility, delivered IT and Network related changes,
+                    but not limited to: Assisted a lot of things by working
+                    closely with board members. During the project, Sorah
+                    redesigned corporate office networks and moved core
+                    functionality to a data centre. (2021)
+                  </li>
+                  <li>
+                    Led technical operation of annual global all-hands meetings;
+                    Designed and operated a single live stream with speakers
+                    from various locations worldwide, including office premises
+                    and remote attendees. (2019-2020)
+                  </li>
+                  <li>
+                    Launched a IT team in company{"'"}s UK office to improve
+                    local operations and support coverage of its local
+                    employees. Ran onboarding of the initial member hired
+                    locally. (2019)
+                  </li>
+                  <li>
+                    Built Jamf and Intune setup; Enabled iOS/Android BYOD based
+                    on Intune, migrated all corporate-owned MacBooks to
+                    Jamf-controlled, and enabled zero-touch setup for most
+                    devices. (2018-2019, 2022)
+                  </li>
+                  <li>
+                    Built multi-region Active Directory fleet for LDAP
+                    workloads, along with Azure AD (Entra ID) as a primary
+                    IDaaS. (2019)
+                  </li>
+                  <li>
+                    Built in-house web-based tool to self-manage passwords and
+                    groups in Active Directory. It also actively replicates data
+                    to separate OpenLDAP instance for gradual consolidation with
+                    AD. (2017)
+                  </li>
+
+                  <li>
+                    Organized the company{"'"}s tech conference {"'"}
+                    <a href="https://techconf.cookpad.com/">Cookpad TechConf</a>
+                    {"'"}; This includes running Wi-Fi for a large number of
+                    attendees. (
+                    <a href="https://techlife.cookpad.com/entry/2017/01/26/120222">
+                      Blog post
+                    </a>
+                    ; 2017-2019, 2022)
+                  </li>
+                </ul>
+              </section>
+
+              <section id="proexp_cookpad_sre">
+                <h4>Site Reliablity Engineering Team</h4>
+                <span>May 2015 - Present</span>
+                <ul className={styleAboutListMargin}>
+                  <li>
+                    Responsible for Security and Developer Experience in Japan
+                    and Global organisation.
+                  </li>
+                  <li>
+                    Decommissioned a traditional IPsec appliance and replaced
+                    with <a href="https://www.twingate.com/">Twingate</a> to
+                    enhance security of non-Web based internal servers with
+                    per-DNS-name access control. (2022)
+                  </li>
+                  <li>
+                    Launched efforts to improve communication between end-users,
+                    support team, and SRE team during service outages and
+                    issues.{" "}
+                    <a href="https://www.cookpadstatus.com/">
+                      A service status page
+                    </a>{" "}
+                    was also published during the project. (2020)
+                  </li>
+                  <li>
+                    Led severe security incident response at{" "}
+                    <a href="https://info.cookpad.com/pr/news/press_2020_0903">
+                      private information exposure in the album feature
+                      (「料理アルバム」における保存写真の表示不具合)
+                    </a>
+                    . (2020)
+                  </li>
+                  <li>
+                    Proposed and executed legacy TLS deprecation (TLS 1.0 and
+                    1.1), to keep following modern best practices in the
+                    industry. Launched a in-house portal to allow service
+                    developers to check legacy protocol usage in their systems,
+                    and turn them off easily. (
+                    <a href="https://techlife.cookpad.com/entry/2021/08/19/100000">
+                      Blog post
+                    </a>
+                    , 2020)
+                  </li>
+                  <li>
+                    Designed and built a IoT infrastructure for{" "}
+                    <a href="https://cookpad-mart.com/">Cookpad Mart</a> for
+                    fridges and label printers with{" "}
+                    <a href="https://www.soracom.io/">SORACOM</a>; This includes
+                    Linux base system images for Raspberry Pi with CI, fleet
+                    management service including OTA update delivery and network
+                    infrastructure to connect server-side systems with deployed
+                    IoT devices. (
+                    <a href="https://techlife.cookpad.com/entry/2019/04/10/180000">
+                      blog post
+                    </a>
+                    , 2019)
+                  </li>
+                  <li>
+                    Ran in-house ISUCON (web app performance competition) as a
+                    company-wide activity in the engineering organisation to
+                    share knowledge of designing and building high performance
+                    web application. (2019)
+                  </li>
+                  <li>
+                    Built a multi-region aware SSH bastion server that a single
+                    connection to a bastion in the closest region can reach
+                    servers in all regions and data centers. (2018)
+                  </li>
+                  <li>
+                    Built a in-house mobile app distribution service 'Haneda';
+                    All employees can install nightly apps or in-house apps
+                    easily into their mobile phones. (2018)
+                  </li>
+                  <li>
+                    Launched a in-house portal to self-manage AWS IAM user and
+                    console access; This removed human intervention to issue
+                    access keys on their first use. (2018)
+                  </li>
+                  <li>
+                    Assisted a launch of SRE team dedicated for international
+                    service located in UK, including onboarding the initial
+                    members hired locally. (2017-2018)
+                  </li>
+                  <li>
+                    Migrated GitHub Enterprise Server from on-premises to AWS.
+                    We were the initial customer for its AWS support. (
+                    <a href="https://techlife.cookpad.com/entry/20150113/104500/ghe-v2">
+                      Blog post
+                    </a>
+                    , 2015)
+                  </li>
+                  <li>
+                    Launched a new infrastructure for{" "}
+                    <a href="https://cookpad.com/uk">
+                      international service ('Global')
+                    </a>{" "}
+                    from scratch in a AWS region apart from domestic service,
+                    and enhanced use of AWS managed services and features.
+                    (2015)
+                  </li>
+                </ul>
+              </section>
+
+              <section id="proexp_cookpad_dev-infra">
+                <h4>Development Infrastructure Team</h4>
+                <span>April 2012 - April 2015</span>
+                <ul>
+                  <li>
+                    Delivered several Ruby and Rails upgrades of the world's
+                    largest Rails monolith.
+                  </li>
+                  <li>
+                    Delivered{" "}
+                    <a href="https://github.com/sorah/mamiya">Mamiya</a>, to
+                    enable fast deployment of large application to large server
+                    fleet.
+                  </li>
+                  <li>
+                    Developed{" "}
+                    <a href="https://github.com/sorah/envchain">Envchain</a>,
+                    which make use of environment environments for secrets on
+                    local development more secure.
+                  </li>
+                </ul>
+              </section>
+            </div>
           </section>
-        </section>
-        <section id="certifications">
-          <h3>Certifications</h3>
-          <ul>
-            <li>
-              <a href="https://www.youracclaim.com/badges/2c10f002-9172-4fbb-a506-7893a2214b97/public_url">
-                AWS Certified Solutions Architect - Associate
-              </a>{" "}
-              (Nov 2018-2021)
-            </li>
-          </ul>
         </section>
 
         <section id="works">
           <h2>Works available as a Open Source Software</h2>
 
           <div className={styleAboutColumns}>
+            <section id="works_himari">
+              <h4>
+                <a href="https://github.com/sorah/himari">himari</a>
+              </h4>
+              <span>March 2023</span>
+              <ul>
+                <li>
+                  A small OIDC IdP backed with Omniauth designed for small teams
+                  and organisations, and targeted to run in AWS Lambda for low
+                  running cost. RubyKaigi and KMC uses this to provide their
+                  team members an access to their AWS account and OIDC-enabled
+                  AWS ALB using GitHub login, in combination with{" "}
+                  <a href="https://github.com/sorah/himari2amc">
+                    sorah/himari2amc
+                  </a>{" "}
+                </li>
+              </ul>
+            </section>
+            <section id="works_needroleshere">
+              <h4>
+                <a href="https://github.com/sorah/needroleshere">
+                  needroleshere
+                </a>
+              </h4>
+              <span>September 2022</span>
+              <ul>
+                <li>
+                  An alternative helper software for AWS IAM Roles Anywhere
+                  targeted for Linux server machines, to bring several
+                  advantages over the official one including: Scoped exposure of
+                  credentials (without giving direct access to the certificate),
+                  systemd integration; Built in Rust.
+                </li>
+              </ul>
+            </section>
+            <section id="works_apigatewayv2rack">
+              <h4>
+                <a href="https://github.com/sorah/apigatewayv2_rack">
+                  apigatewayv2_rack
+                </a>
+              </h4>
+              <span>October 2022</span>
+              <ul>
+                <li>
+                  A lightweight Ruby library to run a Rack web application in
+                  AWS Lambda through API Gateway and Function URL.
+                </li>
+              </ul>
+            </section>
+            <section id="works_ecamo">
+              <h4>
+                <a href="https://github.com/cookpad/ecamo">ecamo</a>
+              </h4>
+              <span>November 2021</span>
+              <ul>
+                <li>
+                  An HTTP image proxy with JWT authentication for my company
+                  {"'"}s internal pages to deal with 3rd party cookie.
+                  Integrates with Fastly Compute@Edge for edge caching, as we
+                  had employees worldwide. Built in Rust.
+                </li>
+              </ul>
+            </section>
             <section id="works_takeout-app">
               <h4>
                 <a href="https://github.com/ruby-no-kai/takeout-app">
@@ -366,11 +449,11 @@ export default async function AboutPage() {
               <ul>
                 <li>
                   A web application for conference virtual venue (live stream,
-                  chat) for <a href="https://rubykaigi.org">RubyKaigi</a>
+                  chat) for <a href="https://rubykaigi.org">RubyKaigi</a>. Built
+                  using Rails, React, Amazon Chime SDK, and Amazon IVS.
                 </li>
               </ul>
             </section>
-
             <section id="works_sponsor-app">
               <h4>
                 <a href="https://github.com/ruby-no-kai/sponsor-app">
@@ -389,7 +472,6 @@ export default async function AboutPage() {
                 </li>
               </ul>
             </section>
-
             <section id="works_himeko">
               <h4>
                 <a href="https://github.com/sorah/himeko">himeko</a>
@@ -402,7 +484,6 @@ export default async function AboutPage() {
                 </li>
               </ul>
             </section>
-
             <section id="works_clarion">
               <h4>
                 <a href="https://github.com/sorah/clarion">clarion</a>
@@ -538,11 +619,9 @@ export default async function AboutPage() {
           </div>
 
           <p>
-            See more at <a href="https://github.com/sorah">my GitHub</a> and{" "}
-            <a href="https://rubygems.org/profiles/sorah">
-              my rubygems.org profile
-            </a>
-            .
+            <i>
+              Find more at <a href="https://github.com/sorah">my GitHub</a>.
+            </i>
           </p>
         </section>
 
@@ -554,7 +633,7 @@ export default async function AboutPage() {
               <h3>
                 <a href="https://rubykaigi.org/">RubyKaigi</a>
               </h3>
-              <div>Conference organizer, Wi-Fi Network Operations Lead</div>
+              <div>Conference Organizer, Wi-Fi Network Operations Lead</div>
               <span>September 2017 - present</span>
               <ul>
                 <li>
@@ -564,20 +643,30 @@ export default async function AboutPage() {
                   </i>
                 </li>
                 <li>
-                  Running Wi-Fi for a large number of attendees (around 1,200),{" "}
+                  Manages Wi-Fi service for a large number of attendees (approx
+                  1,300 devices);{" "}
+                  <a href="https://github.com/ruby-no-kai/rubykaigi-nw">
+                    GitHub Repo
+                  </a>
+                  {", "}
+                  <a href="https://techlife.cookpad.com/entry/2023/05/31/113000">
+                    Blog post (2023)
+                  </a>
+                  {", "}
                   <a href="https://diary.sorah.jp/2017/09/25/rubykaigi2017-wifi">
-                    Blog post on 2017 (Japanese)
+                    Blog post (2017)
                   </a>
                 </li>
                 <li>
-                  Sponsor Relations; Built a web application called{" "}
+                  Run Sponsor Relations; Maintains{" "}
                   <a href="https://github.com/ruby-no-kai/sponsor-app">
                     sponsor-app
-                  </a>
-                  .
+                  </a>{" "}
+                  for CRM.
                 </li>
                 <li>
-                  Virtual Venue; Built a web application called{" "}
+                  Operated virtual venue during COVID-19 for remote attendees;
+                  Built a web application called{" "}
                   <a href="https://github.com/ruby-no-kai/takeout-app">
                     takeout-app
                   </a>
@@ -586,9 +675,6 @@ export default async function AboutPage() {
                 <li>
                   Wi-Fi and Network Operations; Running a large Wi-Fi network
                   for attendees.{" "}
-                  <a href="https://github.com/ruby-no-kai/rubykaigi-nw">
-                    https://github.com/ruby-no-kai/rubykaigi-nw
-                  </a>
                 </li>
               </ul>
             </section>
@@ -615,8 +701,8 @@ export default async function AboutPage() {
               <ul>
                 <li>
                   <i>
-                    <a href="http://isucon.net/">ISUCON</a> is the famous
-                    performance tuning contest of Web applications in Japan. I,{" "}
+                    <a href="http://isucon.net/">ISUCON</a> is the famous web
+                    app performance competition of Web applications in Japan. I,{" "}
                     <a href="https://twitter.com/mirakui">@mirakui</a>, and{" "}
                     <a href="https://twitter.com/rosylilly">@rosylilly</a> were
                     participated as organizer and problem writer for ISUCON10.
@@ -631,13 +717,13 @@ export default async function AboutPage() {
                   .
                 </li>
                 <li>
-                  Built a web-based system to run the contest (
+                  Built a web-based system to run the competition (
                   <a href="https://github.com/isucon/isucon10-portal">
                     isucon/isucon10-portal
                   </a>
                   ); This includes judge, benchmark queue, leaderboard, and
                   clarification forms. Used by contestants and admins during the
-                  contest.
+                  competition.
                 </li>
                 <li>
                   Managed a contestant server system image in the final round.{" "}
@@ -713,8 +799,8 @@ export default async function AboutPage() {
               <ul>
                 <li>
                   <a href="http://isucon.net/">ISUCON</a> is the famous
-                  performance tuning contest of Web applications in Japan. At
-                  2014,{" "}
+                  performance tuning competition of Web applications in Japan.
+                  At 2014,{" "}
                   <a href="http://isucon.net/archives/41252218.html">ISUCON4</a>{" "}
                   held and I, <a href="https://twitter.com/mirakui">@mirakui</a>
                   , and <a href="https://twitter.com/rosylilly">@rosylilly</a>{" "}
@@ -746,14 +832,12 @@ export default async function AboutPage() {
               </ul>
             </section>
 
-            <section id="contrib_more">
-              <h3>And more</h3>
-              <ul>
-                <li>
-                  See more at <a href="https://github.com/sorah">my GitHub</a>.
-                </li>
-              </ul>
-            </section>
+            <p>
+              <i>
+                Find more contributions at{" "}
+                <a href="https://github.com/sorah">my GitHub</a>.
+              </i>
+            </p>
           </div>
         </section>
 
@@ -763,9 +847,9 @@ export default async function AboutPage() {
             <li>
               <b>Programming Languages:</b>{" "}
               <a href="http://www.ruby-lang.org">Ruby</a>,{" "}
-              <a href="https://www.typescriptlang.org/">TypeScript</a>,{" "}
-              <a href="https://www.rust-lang.org/">Rust</a> and{" "}
-              <a href="https://golang.org">Go</a>
+              <a href="https://www.rust-lang.org/">Rust</a>,{" "}
+              <a href="https://www.typescriptlang.org/">TypeScript</a>, and{" "}
+              <a href="https://golang.org">Golang</a>
             </li>
             <li>
               <b>Cloud Platforms:</b>{" "}
@@ -784,8 +868,12 @@ export default async function AboutPage() {
               <a href="http://www.gentoo.org">Gentoo</a>
             </li>
             <li>
-              <b>Security:</b> X.509, OAuth 2, OpenID Connect, SAML, LDAP;
-              Microsoft Intune, Jamf, Active Directory, Microsoft Entra ID
+              <b>Linux init systems:</b> systemd
+            </li>
+            <li>
+              <b>Security:</b> X.509 fundamentals, Cryptography fundamentals,
+              OAuth 2, OpenID Connect, SAML, LDAP; Microsoft Intune, Jamf,
+              Active Directory, Microsoft Entra ID
             </li>
             <li>
               <b>Web backend frameworks:</b>{" "}
@@ -803,6 +891,18 @@ export default async function AboutPage() {
             </li>
             <li>
               <b>Databases:</b> MySQL, DynamoDB, Redis
+            </li>
+          </ul>
+        </section>
+
+        <section id="certifications">
+          <h3>Certifications</h3>
+          <ul>
+            <li>
+              <a href="https://www.youracclaim.com/badges/2c10f002-9172-4fbb-a506-7893a2214b97/public_url">
+                AWS Certified Solutions Architect - Associate
+              </a>{" "}
+              (Nov 2018-2021)
             </li>
           </ul>
         </section>
@@ -890,7 +990,7 @@ export default async function AboutPage() {
                 <li>
                   <i>
                     <a href="http://isucon.net/">ISUCON</a> is a famous
-                    performance tuning contest of Web applications in Japan.
+                    performance tuning competition of Web applications in Japan.
                   </i>
                 </li>
                 <li>
@@ -935,8 +1035,8 @@ export default async function AboutPage() {
               <span>September 2015 - November 2015</span>
               <ul>
                 <li>
-                  <a href="http://isucon.net/">ISUCON</a> is famous performance
-                  tuning contest of Web applications in Japan.
+                  <a href="http://isucon.net/">ISUCON</a> is famous web
+                  performance tuning competition of Web applications in Japan.
                 </li>
                 <li>
                   At{" "}

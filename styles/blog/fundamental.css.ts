@@ -34,7 +34,16 @@ export const [theme, themeVars] = createTheme({
     leftWidth: "12%",
     rightWidth: "85%",
     headerLrMargin: "20px",
+
+    contentFontSize: "18px",
+    contentLineHeight: "calc(18px * 1.6)",
+    contentFontSizeMobile: "16px",
+    contentLineHeightMobile: "calc(16px * 1.6)",
   },
+});
+
+export const styleUseEnglishLineHeight = style({
+  vars: {},
 });
 
 globalStyle("html", {
@@ -106,5 +115,17 @@ export const contentWidthMixin: StyleRule = {
     },
   }),
 };
+
+export const contentFontSizeMixin: StyleRule = {
+  fontSize: themeVars.size.contentFontSize,
+  lineHeight: themeVars.size.contentLineHeight,
+  ...responsiveStyle({
+    mobile: {
+      fontSize: themeVars.size.contentFontSizeMobile,
+      lineHeight: themeVars.size.contentLineHeightMobile,
+    },
+  }),
+};
+export const styleContentFontSize = style(contentFontSizeMixin);
 
 export const styleRevisionMark = style({ display: "none" });

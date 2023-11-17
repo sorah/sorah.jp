@@ -43,6 +43,7 @@ export default async function Home() {
       </div>
       <div className={styleMainContent}>
         <h1 className={styleMainAvatarName}>Sorah Fukumori</h1>
+
         <p className={styleMainBio}>
           is a Rubyist and a Rustacean who works in Cloud, Security, Systems,
           and Network. Currently Sorah&apos;s a software engineer working for{" "}

@@ -1,5 +1,9 @@
 import { globalStyle, style } from "@vanilla-extract/css";
-import { contentWidthMixin, themeVars } from "./fundamental.css";
+import {
+  contentFontSizeMixin,
+  contentWidthMixin,
+  themeVars,
+} from "./fundamental.css";
 import { responsiveStyle } from "./functions";
 
 export const styleEntry = style({
@@ -52,16 +56,7 @@ export const styleEntryHeaderTitle = style({
 
 export const styleEntryContent = style([
   contentWidthMixin,
-  {
-    fontSize: "18px",
-    lineHeight: "calc(18px * 1.6)",
-  },
-  responsiveStyle({
-    mobile: {
-      fontSize: "16px",
-      lineHeight: "calc(16px * 1.6)",
-    },
-  }),
+  contentFontSizeMixin,
 ]);
 
 globalStyle(
@@ -96,7 +91,7 @@ globalStyle(`${styleEntryContent} h4`, {
 });
 
 globalStyle(`${styleEntryContent} p`, {
-  marginBottom: "calc(18px * 1.7)",
+  marginBottom: themeVars.size.contentLineHeight,
 });
 
 globalStyle(`${styleEntryContent} blockquote`, {

@@ -6,7 +6,7 @@ import { styleContainer } from "./blog/container.css";
 export const styleMainSection = style([
   {
     display: "flex",
-    marginTop: "5vh",
+    marginTop: "20vh",
     width: "100%",
     justifyContent: "center",
   },
@@ -35,6 +35,7 @@ export const styleMainAvatarName = style([
     fontWeight: 700,
     fontSize: "42px",
     lineHeight: "44px",
+    letterSpacing: "-1px",
   },
 ]);
 
