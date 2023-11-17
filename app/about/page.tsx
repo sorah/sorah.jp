@@ -26,6 +26,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About and Resume",
   description: "Sorah Fukumori's Resume",
+  alternates: {
+    canonical: "/about",
+  },
 };
 
 export default async function AboutPage() {

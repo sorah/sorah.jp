@@ -9,6 +9,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Compensation (Salary)",
   description: "Sorah Fukumori's Compensation data",
+  alternates: {
+    canonical: "/pages/salary",
+  },
 };
 
 type CompensationEntry = {

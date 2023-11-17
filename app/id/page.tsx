@@ -35,6 +35,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Links",
   description: "Sorah Fukumori's links",
+  alternates: {
+    canonical: "/id",
+  },
 };
 
 export default async function IdsPage() {

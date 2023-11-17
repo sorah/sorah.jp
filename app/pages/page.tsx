@@ -7,6 +7,9 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Pages",
   description: null,
+  alternates: {
+    canonical: "/pages",
+  },
 };
 
 export default async function PagesPage() {

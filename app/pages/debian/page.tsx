@@ -5,6 +5,9 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Debian Packages",
   description: "Sorah Fukumori's Debian Packages information",
+  alternates: {
+    canonical: "/pages/debian",
+  },
 };
 
 export default async function DebianPage() {
