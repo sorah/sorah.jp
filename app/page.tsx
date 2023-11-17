@@ -6,6 +6,7 @@ import {
   styleMainBio,
   styleMainContent,
   styleMainIds,
+  styleMainMore,
   styleMainSection,
 } from "@/styles/Home.css";
 import {
@@ -100,7 +101,7 @@ export default async function Home() {
             </li>
           </ul>
         </nav>
-        <p className={styleMainBio}>
+        <p className={styleMainMore}>
           <Link href="/about">More →</Link>
         </p>
       </div>
