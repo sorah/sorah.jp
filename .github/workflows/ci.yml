@@ -31,5 +31,5 @@ jobs:
       - run: 'npm ci'
       - run: 'npx next build'
       - run: 'rsync -r public/ out'
-      - run: 'ruby upload.rb out "prd/" "sorah-jp"'
+      - run: 'bundle exec ruby upload.rb out "prd/" "sorah-jp"'
 
