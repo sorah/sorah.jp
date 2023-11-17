@@ -20,7 +20,14 @@ import {
   SiRss,
   SiTwitter,
 } from "@icons-pack/react-simple-icons";
+import { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default async function Home() {
   return (
