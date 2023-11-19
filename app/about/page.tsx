@@ -928,41 +928,59 @@ export default async function AboutPage() {
 
           <ul>
             <li>
+              <a href="https://speakerdeck.com/sorah/serverless-idp-for-small-team-himari">
+                Serverless IdP for Small Team
+              </a>{" "}
+              (Lightning talk at RubyKaigi 2023, May 2023)
+            </li>
+            <li>
+              <a href="https://speakerdeck.com/sorah/tech-pov-of-a-rubykaigi-organizer">
+                RubyKaigi のはなし
+              </a>{" "}
+              (Keynote for Fukuoka RubyistKaigi 03, Feb 2023)
+            </li>
+            <li>
+              <a href="https://speakerdeck.com/sorah/rubykaigi-takeout-2021-takeout-app-behind-the-scenes">
+                RubyKaigi Takeout 2021 バーチャル会場 &amp; 配信の技術的舞台裏
+              </a>{" "}
+              (Architect New World on AWS 2022, Apr 2022)
+            </li>
+            <li>
               <a href="https://speakerdeck.com/sorah/fastly-in-cookpad">
                 Fastly in Cookpad
-              </a>
-              , Fastly Yamagoya 2017 in Tokyo, on October 2017
+              </a>{" "}
+              (Fastly Yamagoya 2017 in Tokyo, Oct 2017)
             </li>
             <li>
               <a href="https://speakerdeck.com/sorah/keynote-oedo-rubykaigi-06">
                 Keynote
-              </a>
-              , Oedo RubyKaigi 06 in Tokyo at March 20th 2017
+              </a>{" "}
+              (Oedo RubyKaigi 06, Mar 2023)
             </li>
             <li>
               <a href="https://speakerdeck.com/sorah/building-infrastructure-for-our-global-service">
                 Building infrastructure for our global service
-              </a>
-              , Cookpad TechConf 2017 in Tokyo, at January 21st 2017
+              </a>{" "}
+              (Cookpad TechConf 2017, Jan 2017)
             </li>
             <li>
               <a href="https://speakerdeck.com/sorah/acmesmith-http2study8">
                 acmesmith: An effective ACME client
-              </a>
-              , http2study #8 in Tokyo, May 30th 2016
+              </a>{" "}
+              (http2study #8, May 2016)
             </li>
             <li>
               <a href="https://speakerdeck.com/sorah/scalable-deployments-how-we-deploy-rails-app-to-150-plus-hosts-in-a-minute">
                 Scalable Deployments - How we deploy Rails app to 150+ hosts in
                 a minute
-              </a>
-              , RubyKaigi 2014 in Tokyo, on September 2014
+              </a>{" "}
+              (RubyKaigi 2014, Sep 2014)
             </li>
             <li>
               <a href="https://speakerdeck.com/sorah/parallel-testing-world">
                 Parallel Testing World
-              </a>
-              , RubyConf 2011 in New Orleans, on November 2011
+              </a>{" "}
+              (RubyConf 2011, Nov 2011)
             </li>
           </ul>
         </section>
