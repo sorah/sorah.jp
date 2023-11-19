@@ -95,6 +95,10 @@ globalStyle(`${styleEntryContent} p`, {
   wordBreak: "auto-phrase",
   textWrap: "pretty",
 } as any);
+globalStyle(`${styleEntryContent} li`, {
+  wordBreak: "auto-phrase",
+  textWrap: "pretty",
+} as any);
 
 globalStyle(`${styleEntryContent} blockquote`, {
   marginTop: "10px",
