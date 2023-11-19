@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# SPDX-License-Identifier; CC0-1.0
 require 'aws-sdk-s3'
 require 'aws-sdk-cloudfront'
 require 'securerandom'
