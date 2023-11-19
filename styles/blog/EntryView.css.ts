@@ -92,7 +92,9 @@ globalStyle(`${styleEntryContent} h4`, {
 
 globalStyle(`${styleEntryContent} p`, {
   marginBottom: themeVars.size.contentLineHeight,
-});
+  wordBreak: "auto-phrase",
+  textWrap: "pretty",
+} as any);
 
 globalStyle(`${styleEntryContent} blockquote`, {
   marginTop: "10px",
