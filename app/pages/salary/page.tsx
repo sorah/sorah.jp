@@ -61,7 +61,7 @@ const COMPENSATION_DATA: CompensationEntry[] = [
   quickEntry(2022, 1000.2),
   {
     ...quickEntry(2023, 1020, 60),
-    employmentIncomeWithholdingRecordUnavailable: true,
+    // employmentIncomeWithholdingRecordUnavailable: true,
   },
 ];
 
