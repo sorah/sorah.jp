@@ -46,9 +46,13 @@ export default async function AboutPage() {
             including: Cloud infrastructure, Security, Digital identity &amp;
             authentication, Network. And is capable to act as a{" "}
             <i>full-stack</i> engineer ranging from low-level infrastructure to
-            web frontend. Sorah's currently working as a software enginner of
-            Site Reliability and Corporate Engineering (IT) for{" "}
-            <a href="https://cookpad.com/uk">Cookpad</a>.
+            web frontend.
+          </p>
+          <p>
+            Sorah's currently working as a software enginner of Platform and
+            Corporate Engineering (IT) for{" "}
+            <a href="https://cookpad.com/uk">Cookpad</a> and is serving as head
+            of Security (CISO) and IT.
           </p>
 
           <p>
@@ -162,8 +166,7 @@ export default async function AboutPage() {
               <a href="https://cookpad.com/uk">Cookpad Inc.</a>
             </h3>
             <div>
-              Staff Software Engineer (Site Reliability, Security and Corporate
-              Engineering)
+              Staff Software Engineer (Platform, Security and IT) and CISO
             </div>
             <span>April 2012 - Present</span>
             <ul>
@@ -177,17 +180,33 @@ export default async function AboutPage() {
                   service independently from Japan domestic business.
                 </i>
               </li>
+              <li>
+                From January 2024, assumed role of CISO and started to serve as
+                head of Security and IT. However still working as an individual
+                contributor for areas I responsible for.
+              </li>
             </ul>
             <div>
-              <section id="proexp_cookpad_it">
-                <h4>Corporate Engineering Team (a.k.a. IT)</h4>
-                <span>October 2019 - Present</span>
+              <section id="proexp_cookpad_it2">
+                <h4>Corporate Engineering Team (aka. IT)</h4>
+                <div>Head of IT and Security, CISO</div>
+                <span>Janurary 2024 - Present</span>
                 <ul className={styleAboutListMargin}>
                   <li>
                     Responsible for Security, IdP, MDM, corporate IP network,
                     and Employee Productivity.
                   </li>
-
+                </ul>
+              </section>
+              <section id="proexp_cookpad_it">
+                <h4>Corporate Engineering Team (aka. IT)</h4>
+                <div>Staff Software Engineer (IT and Security)</div>
+                <span>October 2019 - December 2023</span>
+                <ul className={styleAboutListMargin}>
+                  <li>
+                    Responsible for Security, IdP, MDM, corporate IP network,
+                    and Employee Productivity.
+                  </li>
                   <li>
                     Delivered a Google Workspace primary domain rename with zero
                     downtime and confusion, including most of external SaaS used
@@ -255,7 +274,8 @@ export default async function AboutPage() {
               </section>
 
               <section id="proexp_cookpad_sre">
-                <h4>Site Reliablity Engineering Team</h4>
+                <h4>Platform Engineering Team</h4>
+                <div>Staff Software Engineer (Platform)</div>
                 <span>May 2015 - Present</span>
                 <ul className={styleAboutListMargin}>
                   <li>
@@ -358,6 +378,7 @@ export default async function AboutPage() {
 
               <section id="proexp_cookpad_dev-infra">
                 <h4>Development Infrastructure Team</h4>
+                <div>Software Engineer</div>
                 <span>April 2012 - April 2015</span>
                 <ul>
                   <li>
