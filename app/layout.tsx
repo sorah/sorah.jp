@@ -59,6 +59,7 @@ export default function RootLayout({
           {children}
         </div>
         <Script
+          strategy="afterInteractive"
           src="https://static.cloudflareinsights.com/beacon.min.js"
           data-cf-beacon={`{"token": "${analyticsToken}"}`}
           defer
