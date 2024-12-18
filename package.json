@@ -9,20 +9,20 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@icons-pack/react-simple-icons": "^9.1.0",
-    "@vanilla-extract/css": "^1.14.0",
-    "@vanilla-extract/next-plugin": "^2.3.2",
-    "next": "14.0.3",
+    "@icons-pack/react-simple-icons": "9.1.0",
+    "@vanilla-extract/css": "^1.16.1",
+    "@vanilla-extract/next-plugin": "^2.4.7",
+    "next": "15.1.1",
     "react": "^18",
     "react-dom": "^18",
     "server-only": "^0.0.1"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.0.3",
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "^15",
     "typescript": "^5"
   }
 }
