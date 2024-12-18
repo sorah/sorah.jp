@@ -293,10 +293,12 @@ export default async function AboutPage() {
                     <a href="https://techlife.cookpad.com/entry/2024/10/10/105832">
                       One Experience
                     </a>{" "}
-                    project. Acted as a bridge between Japan and Global
-                    organisation, not limited to simple bridge between English
-                    and Japanese language. Led security risk management and
-                    discovery on data and system migration. (2024)
+                    project that migrates systems and data owned by Japan
+                    organisation to Global based systems and platform. Acted as
+                    a bridge between Japan and Global organisation, not limited
+                    to simple bridge between English and Japanese language. Led
+                    security risk management and discovery on data and system
+                    migration. (2024)
                   </li>
                   <li>
                     Decommissioned a traditional IPsec appliance and replaced
