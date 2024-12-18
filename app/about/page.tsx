@@ -92,13 +92,13 @@ export default async function AboutPage() {
               <li>
                 <Identifier href="https://hachyderm.io/@sorah">
                   <SiMastodon title="Mastodon" />
-                  hachyderm.io/sorah
+                  hachyderm.io/@sorah
                 </Identifier>
               </li>
               <li>
                 <Identifier href="https://handon.club/@sorah">
                   <SiMastodon title="Mastodon" />
-                  handon.club/sorah
+                  handon.club/@sorah
                 </Identifier>
               </li>
               <li>
@@ -174,11 +174,7 @@ export default async function AboutPage() {
                 Plays various important roles in the company. Responsible for:
                 End-user facing cloud infrastructure and its reliablity,
                 Security, and Employee Productivity (IT and Engineering
-                Platform) in the both Cookpad Japan and Global organisation;{" "}
-                <i>
-                  Note: Cookpad Global develops and operates international
-                  service independently from Japan domestic business.
-                </i>
+                Platform) in the both Cookpad Japan and Global organisation.
               </li>
               <li>
                 From January 2024, assumed role of CISO and started to serve as
@@ -196,6 +192,21 @@ export default async function AboutPage() {
                     Responsible for Security, IdP, MDM, corporate IP network,
                     and Employee Productivity.
                   </li>
+                  <li>
+                    Launched an internal workflow and ticketing system called
+                    "Fryegg", which replaces ServiceNow, by utilizing AWS Step
+                    Functions and other serverless systems with Ruby and Rails.
+                    Most of legal related workflows and purchasing related
+                    workflows has been replaced with AWS Step Functions. (
+                    <a href="https://speakerdeck.com/sorah/fryegg">
+                      Slide deck
+                    </a>
+                    , 2023-2024)
+                  </li>
+                  <li>
+                    Delivered office relocation to Tokyo; Designed and built
+                    office network and physical security. (2024)
+                  </li>
                 </ul>
               </section>
               <section id="proexp_cookpad_it">
@@ -207,6 +218,7 @@ export default async function AboutPage() {
                     Responsible for Security, IdP, MDM, corporate IP network,
                     and Employee Productivity.
                   </li>
+
                   <li>
                     Delivered a Google Workspace primary domain rename with zero
                     downtime and confusion, including most of external SaaS used
@@ -216,12 +228,6 @@ export default async function AboutPage() {
                     </a>
                     , 2023)
                   </li>
-                  <li>
-                    Contributed to system design of in-house workflow and
-                    inquiries management system; built with Rails, React and AWS
-                    Step Functions. (2023)
-                  </li>
-
                   <li>
                     Delivered office relocation to Yokohama; As a part of
                     responsibility, delivered IT and Network related changes,
@@ -281,6 +287,16 @@ export default async function AboutPage() {
                   <li>
                     Responsible for Security and Developer Experience in Japan
                     and Global organisation.
+                  </li>
+                  <li>
+                    Contributed to the{" "}
+                    <a href="https://techlife.cookpad.com/entry/2024/10/10/105832">
+                      One Experience
+                    </a>{" "}
+                    project. Acted as a bridge between Japan and Global
+                    organisation, not limited to simple bridge between English
+                    and Japanese language. Led security risk management and
+                    discovery on data and system migration. (2024)
                   </li>
                   <li>
                     Decommissioned a traditional IPsec appliance and replaced
@@ -407,6 +423,21 @@ export default async function AboutPage() {
           <h2>Works available as a Open Source Software</h2>
 
           <div className={styleAboutColumns}>
+            <section id="works_mairu">
+              <h4>
+                <a href="https://github.com/sorah/mairu">mairu</a>
+              </h4>
+              <span>April 2024</span>
+              <ul>
+                <li>
+                  Envchain like command line utility for AWS SSO. This tool
+                  simplifies using multiple AWS IAM roles in developers' local
+                  machine by auto role ARN detection, and also secures AWS SSO
+                  usage by storing everything on memory and avoid persisted
+                  credentials on its disks.
+                </li>
+              </ul>
+            </section>
             <section id="works_himari">
               <h4>
                 <a href="https://github.com/sorah/himari">himari</a>
@@ -702,6 +733,13 @@ export default async function AboutPage() {
                   for CRM.
                 </li>
                 <li>
+                  Maintains on-site digital signages:{" "}
+                  <a href="https://github.com/ruby-no-kai/signage-app">
+                    signage-app
+                  </a>
+                  .
+                </li>
+                <li>
                   Operated virtual venue during COVID-19 for remote attendees;
                   Built a web application called{" "}
                   <a href="https://github.com/ruby-no-kai/takeout-app">
@@ -948,6 +986,13 @@ export default async function AboutPage() {
           <h2>Talks</h2>
 
           <ul>
+            <li>
+              <a href="https://speakerdeck.com/sorah/fryegg">
+                Step Functions で決済を回そう
+              </a>{" "}
+              (AWS Webinar; コンテナ/サーバーレスによるモダン・プロジェクト実践,
+              Nov 2024)
+            </li>
             <li>
               <a href="https://speakerdeck.com/sorah/serverless-idp-for-small-team-himari">
                 Serverless IdP for Small Team
