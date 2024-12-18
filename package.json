@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@icons-pack/react-simple-icons": "9.1.0",
+    "@icons-pack/react-simple-icons": "9.4.1",
     "@vanilla-extract/css": "^1.16.1",
     "@vanilla-extract/next-plugin": "^2.4.7",
     "next": "15.1.1",
