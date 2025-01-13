@@ -29,6 +29,7 @@ import {
   SiTwitter,
   SiUntappd,
   SiWikipedia,
+  SiBluesky,
 } from "@icons-pack/react-simple-icons";
 import { Metadata } from "next";
 
@@ -131,6 +132,12 @@ export default async function IdsPage() {
                 <Identifier href="https://pawoo.net/@sorah">
                   <SiMastodon title="Mastodon" />
                   pawoo.net/sorah
+                </Identifier>
+              </li>
+              <li>
+                <Identifier href="https://bsky.app/profile/sorah.jp">
+                  <SiBluesky title="Bluesky" />
+                  bsky.app/profile/sorah.jp
                 </Identifier>
               </li>
               <li>
@@ -300,8 +307,8 @@ export default async function IdsPage() {
                 </Identifier>
               </li>
               <li>
-                <Identifier href="http://sp.pf.mbga.jp/12008305/?guid=ON&url=http%3A%2F%2F125.6.169.35%2Fidolmaster%2Fprofile%2Fshow%2F72177202%3Fl_frm%3DMypage_1%26rnd%3D835669350">
-                  im@s cinderella girls <b>72177202</b>..
+                <Identifier href="https://mixi.social/@sorah">
+                  mixi.social/@sorah
                 </Identifier>
               </li>
             </ul>

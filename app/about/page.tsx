@@ -88,7 +88,6 @@ export default async function AboutPage() {
                   github.com/<b>sorah</b>
                 </Identifier>
               </li>
-
               <li>
                 <Identifier href="https://hachyderm.io/@sorah">
                   <SiMastodon title="Mastodon" />

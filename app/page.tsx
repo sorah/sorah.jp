@@ -19,6 +19,7 @@ import {
   SiMastodon,
   SiRss,
   SiTwitter,
+  SiInstagram,
 } from "@icons-pack/react-simple-icons";
 import { Metadata } from "next";
 import Link from "next/link";
@@ -90,6 +91,12 @@ export default async function Home() {
               <Identifier href="https://handon.club/@sorah">
                 <SiMastodon title="Fediverse" />
                 handon.club/@sorah
+              </Identifier>
+            </li>
+            <li>
+              <Identifier href="http://instagram.com/sora_h">
+                <SiInstagram title="Instagram" />
+                sora_h
               </Identifier>
             </li>
           </ul>
