@@ -141,6 +141,12 @@ export default async function IdsPage() {
                 </Identifier>
               </li>
               <li>
+                <Identifier href="https://bsky.app/profile/sorah.bsky.social">
+                  <SiBluesky title="Bluesky" />
+                  bsky.app/profile/sorah.bsky.social
+                </Identifier>
+              </li>
+              <li>
                 <Identifier href="http://www.facebook.com/sorahjp">
                   <SiFacebook title="Facebook" />
                   sorahjp
