@@ -4,7 +4,6 @@ import { styleIdsAvatars, styleIdsIds } from "@/styles/IdsPage.css";
 import { styleEntry, styleEntryContent } from "@/styles/blog/EntryView.css";
 import { stylePageMain } from "@/styles/page.css";
 import {
-  SiAdobelightroom,
   SiAmazon,
   SiCoderwall,
   SiDiscord,
@@ -17,20 +16,21 @@ import {
   SiLastdotfm,
   SiLaunchpad,
   SiLine,
-  SiLinkedin,
   SiMastodon,
   SiRss,
-  SiSkype,
   SiSpeakerdeck,
   SiStackoverflow,
   SiSteam,
   SiTumblr,
   SiTwitch,
-  SiTwitter,
   SiUntappd,
   SiWikipedia,
   SiBluesky,
 } from "@icons-pack/react-simple-icons";
+import { SiTwitter } from "@/components/SiTwitter";
+import { SiLinkedin } from "@/components/SiLinkedin";
+import { SiAdobelightroom } from "@/components/SiAdobelightroom";
+import { SiSkype } from "@/components/SiSkype";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

@@ -9,17 +9,17 @@ import { styleIdsAvatars, styleIdsIds } from "@/styles/IdsPage.css";
 import { styleEntry, styleEntryContent } from "@/styles/blog/EntryView.css";
 import { stylePageMain } from "@/styles/page.css";
 import {
-  SiAdobelightroom,
   SiDiscord,
   SiGithub,
   SiGmail,
   SiInstagram,
-  SiLinkedin,
   SiMastodon,
   SiRss,
   SiSpeakerdeck,
-  SiTwitter,
 } from "@icons-pack/react-simple-icons";
+import { SiTwitter } from "@/components/SiTwitter";
+import { SiLinkedin } from "@/components/SiLinkedin";
+import { SiAdobelightroom } from "@/components/SiAdobelightroom";
 import { Metadata } from "next";
 import Link from "next/link";
 

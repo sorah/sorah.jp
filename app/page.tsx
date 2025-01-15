@@ -18,9 +18,9 @@ import {
   SiGmail,
   SiMastodon,
   SiRss,
-  SiTwitter,
   SiInstagram,
 } from "@icons-pack/react-simple-icons";
+import { SiTwitter } from "@/components/SiTwitter";
 import { Metadata } from "next";
 import Link from "next/link";
 
