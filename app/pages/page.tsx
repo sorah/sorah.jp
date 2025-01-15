@@ -28,6 +28,11 @@ export default async function PagesPage() {
             <li className={styleFooterLi}>
               <Link href="/pages/salary">Sorah's Compensation (Salary)</Link>
             </li>
+            <li className={styleFooterLi}>
+              <Link href="/pages/event-radio">
+                イベント・トランシーバー・ガイド
+              </Link>
+            </li>
           </ul>
         </nav>
       </article>
