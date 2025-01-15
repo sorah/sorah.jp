@@ -1,4 +1,6 @@
-const { createVanillaExtractPlugin } = require("@vanilla-extract/next-plugin");
+import { createVanillaExtractPlugin } from "@vanilla-extract/next-plugin";
+import createMDX from "@next/mdx";
+
 const withVanillaExtract = createVanillaExtractPlugin({
   identifiers:
     process.env.NODE_ENV === "production"
@@ -24,4 +26,6 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-module.exports = withVanillaExtract(nextConfig);
+const withMDX = createMDX({});
+
+export default withVanillaExtract(withMDX(nextConfig));
