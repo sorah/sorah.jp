@@ -375,7 +375,7 @@ export default async function AboutPage() {
                   </li>
                   <li>
                     Migrated GitHub Enterprise Server from on-premises to AWS.
-                    We were the initial customer for its AWS support. (
+                    Cookpad was the initial customer for its AWS support. (
                     <a href="https://techlife.cookpad.com/entry/20150113/104500/ghe-v2">
                       Blog post
                     </a>
@@ -400,7 +400,8 @@ export default async function AboutPage() {
                 <ul>
                   <li>
                     Delivered several Ruby and Rails upgrades of the world's
-                    largest Rails monolith.
+                    largest Rails monolith, including migration to
+                    protect_from_forgery.
                   </li>
                   <li>
                     Delivered{" "}

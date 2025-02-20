@@ -60,9 +60,11 @@ const COMPENSATION_DATA: CompensationEntry[] = [
   { ...quickEntry(2021, 1000.2), month: 8 },
   quickEntry(2022, 1000.2),
   quickEntry(2023, 1020, 60),
+  quickEntry(2024, 1300.8, 100),
   {
-    ...quickEntry(2024, 1300.8, 100),
-    // employmentIncomeWithholdingRecordUnavailable: true,
+    ...quickEntry(2025, 1480, 0),
+    employmentIncomeWithholdingRecordUnavailable: true,
+    month: 2,
   },
 ];
 
