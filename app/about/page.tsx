@@ -49,10 +49,9 @@ export default async function AboutPage() {
             web frontend.
           </p>
           <p>
-            Sorah's currently working as a software enginner of Platform and
-            Corporate Engineering (IT) for{" "}
-            <a href="https://cookpad.com/uk">Cookpad</a> and is serving as head
-            of Security (CISO) and IT.
+            Sorah's currently working as a software enginner for{" "}
+            <a href="https://ivry.jp/company/">IVRy</a>, ranging from Cloud
+            Infrastructure and Security, to IT.
           </p>
 
           <p>
@@ -91,13 +90,13 @@ export default async function AboutPage() {
               <li>
                 <Identifier href="https://hachyderm.io/@sorah">
                   <SiMastodon title="Mastodon" />
-                  hachyderm.io/@sorah
+                  hachyderm.io/<b>@sorah</b>
                 </Identifier>
               </li>
               <li>
                 <Identifier href="https://handon.club/@sorah">
                   <SiMastodon title="Mastodon" />
-                  handon.club/@sorah
+                  handon.club/<b>@sorah</b>
                 </Identifier>
               </li>
               <li>
@@ -132,6 +131,12 @@ export default async function AboutPage() {
                 </Identifier>
               </li>
               <li>
+                <Identifier href="http://instagram.com/sora_h">
+                  <SiInstagram title="Instagram" />
+                  sora_h
+                </Identifier>
+              </li>
+              <li>
                 <Identifier href="https://speakerdeck.com/u/sorah">
                   <SiSpeakerdeck title="SpeakerDeck" />
                   speakerdeck.com/u/<b>sorah</b>
@@ -144,12 +149,6 @@ export default async function AboutPage() {
                   lightroom.adobe.com/gallery
                 </Identifier>
               </li>
-              <li>
-                <Identifier href="http://instagram.com/sora_h">
-                  <SiInstagram title="Instagram" />
-                  sora_h
-                </Identifier>
-              </li>
             </ul>
           </div>
 
@@ -160,6 +159,15 @@ export default async function AboutPage() {
         <section id="pro_experiences">
           <h2>Professional Experiences</h2>
 
+          <section id="proexp_ivry">
+            <h3>
+              <a href="https://ivry.jp/company/">IVRy</a>
+            </h3>
+            <div>Principal Software Engineer</div>
+            <span>April 2025 -</span>
+            <ul></ul>
+          </section>
+
           <section id="proexp_cookpad">
             <h3>
               <a href="https://cookpad.com/uk">Cookpad Inc.</a>
@@ -167,25 +175,20 @@ export default async function AboutPage() {
             <div>
               Staff Software Engineer (Platform, Security and IT) and CISO
             </div>
-            <span>April 2012 - Present</span>
+            <span>April 2012 - March 2025</span>
             <ul>
               <li>
-                Plays various important roles in the company. Responsible for:
+                Played various important roles in the company. Responsible for:
                 End-user facing cloud infrastructure and its reliablity,
                 Security, and Employee Productivity (IT and Engineering
                 Platform) in the both Cookpad Japan and Global organisation.
-              </li>
-              <li>
-                From January 2024, assumed role of CISO and started to serve as
-                head of Security and IT. However still working as an individual
-                contributor for areas I responsible for.
               </li>
             </ul>
             <div>
               <section id="proexp_cookpad_it2">
                 <h4>Corporate Engineering Team (aka. IT)</h4>
                 <div>Head of IT and Security, CISO</div>
-                <span>Janurary 2024 - Present</span>
+                <span>Janurary 2024 - March 2025</span>
                 <ul className={styleAboutListMargin}>
                   <li>
                     Responsible for Security, IdP, MDM, corporate IP network,
@@ -281,7 +284,7 @@ export default async function AboutPage() {
               <section id="proexp_cookpad_sre">
                 <h4>Platform Engineering Team</h4>
                 <div>Staff Software Engineer (Platform)</div>
-                <span>May 2015 - Present</span>
+                <span>May 2015 - March 2025</span>
                 <ul className={styleAboutListMargin}>
                   <li>
                     Responsible for Security and Developer Experience in Japan

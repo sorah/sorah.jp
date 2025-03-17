@@ -56,7 +56,7 @@ export default async function Home() {
         <p className={styleMainBio}>
           is a Rubyist and a Rustacean who works in Cloud, Security, Systems,
           and Network. Currently Sorah&apos;s a software engineer working for{" "}
-          <a href="https://cookpad.com/uk">Cookpad</a>.
+          <a href="https://ivry.jp/company/">IVRy</a>.
         </p>
 
         <nav className={styleMainIds}>
