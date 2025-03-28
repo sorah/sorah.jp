@@ -325,15 +325,23 @@ export default async function IdsPage() {
           <h2>SSH public key</h2>
 
           <p>
-            <a href="/ssh-key.txt">ssh-key.txt</a> (
-            <a href="/ssh-key.txt.asc">with pgp clearsign</a>)
+            <b>General-purpose pubilc keys:</b>
+            <a href="/ssh-key.txt">ssh-key.txt</a>,{" "}
+            <a href="/ssh-key.txt.sig">ssh-key.txt.sig</a>
+            (or <a href="/ssh-key.txt.asc">with pgp clearsign</a>)
+          </p>
+          <p>
+            <b>All public keys (includes ssh-rsa):</b>
+            <a href="/ssh-key-all.txt">ssh-key-all.txt</a>,{" "}
+            <a href="/ssh-key-all.txt.sig">ssh-key-all.txt.sig</a>
+            (or <a href="/ssh-key-all.txt.asc">with pgp clearsign</a>)
           </p>
         </section>
 
         <section id="pgp">
           <h2>PGP public key</h2>
 
-          <p>My active keys are:</p>
+          <p>Current my primary keys are:</p>
 
           <ul>
             <li>
@@ -342,18 +350,26 @@ export default async function IdsPage() {
               expires:2025-01-18
             </li>
             <li>
-              Work <a href="/pgp-pubkeys/3DA8F24C.txt">3DA8F24C</a>: 1183 EFBE
-              9926 7C3F B700 F728 6F49 EB76 3DA8 F24C, created:2012-10-24
+              Work <a href="/pgp-pubkeys/789C85BD.txt">789C85BD</a>: 8E44 D207
+              CFFD 4037 40CA 5329 C9BA 0856 789C 85BD, created:2025-03-29{" "}
+              <strong>current</strong>
             </li>
           </ul>
 
           <h3>History</h3>
+
+          <p>Don't trust non-current keys.</p>
 
           <ul>
             <li>
               <a href="/pgp-pubkeys/F4C0895C.txt">F4C0895C</a>: 71D9 EF35 7AF6
               410E 75E1 C3AD 34F7 A7C2 F4C0 895C, created:2015-01-21
               expires:2025-01-18 <strong>current</strong>
+            </li>
+            <li>
+              <a href="/pgp-pubkeys/789C85BD.txt">789C85BD</a>: 8E44 D207 CFFD
+              4037 40CA 5329 C9BA 0856 789C 85BD, created:2025-03-29{" "}
+              <strong>current</strong>
             </li>
             <li>
               <a href="/pgp-pubkeys/3DA8F24C.txt">3DA8F24C</a>: 1183 EFBE 9926
