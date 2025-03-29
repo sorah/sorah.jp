@@ -45,7 +45,7 @@ export default async function IdsPage() {
   return (
     <main className={stylePageMain}>
       <article className={styleEntryContent}>
-        <h1>Identifications</h1>
+        <h1>Identity</h1>
 
         <section id="avatar">
           <h2>Avatar</h2>
@@ -119,31 +119,31 @@ export default async function IdsPage() {
               <li>
                 <Identifier href="https://hachyderm.io/@sorah">
                   <SiMastodon title="Mastodon" />
-                  hachyderm.io/sorah
+                  hachyderm.io/<b>@sorah</b>
                 </Identifier>
               </li>
               <li>
                 <Identifier href="https://handon.club/@sorah">
                   <SiMastodon title="Mastodon" />
-                  handon.club/sorah
+                  handon.club/<b>@sorah</b>
                 </Identifier>
               </li>
               <li>
                 <Identifier href="https://pawoo.net/@sorah">
                   <SiMastodon title="Mastodon" />
-                  pawoo.net/sorah
+                  pawoo.net/<b>@sorah</b>
                 </Identifier>
               </li>
               <li>
                 <Identifier href="https://bsky.app/profile/sorah.jp">
                   <SiBluesky title="Bluesky" />
-                  bsky.app/profile/sorah.jp
+                  bsky.app/profile/<b>sorah.jp</b>
                 </Identifier>
               </li>
               <li>
                 <Identifier href="https://bsky.app/profile/sorah.bsky.social">
                   <SiBluesky title="Bluesky" />
-                  bsky.app/profile/sorah.bsky.social
+                  bsky.app/profile/<b>sorah.bsky.social</b>
                 </Identifier>
               </li>
               <li>
@@ -325,13 +325,12 @@ export default async function IdsPage() {
           <h2>SSH public key</h2>
 
           <p>
-            <b>General-purpose pubilc keys:</b>
+            <b>General-purpose pubilc keys:</b>{" "}
             <a href="/ssh-key.txt">ssh-key.txt</a>,{" "}
             <a href="/ssh-key.txt.sig">ssh-key.txt.sig</a>
             (or <a href="/ssh-key.txt.asc">with pgp clearsign</a>)
-          </p>
-          <p>
-            <b>All public keys (includes ssh-rsa):</b>
+            <br />
+            <b>All public keys (includes ssh-rsa):</b>{" "}
             <a href="/ssh-key-all.txt">ssh-key-all.txt</a>,{" "}
             <a href="/ssh-key-all.txt.sig">ssh-key-all.txt.sig</a>
             (or <a href="/ssh-key-all.txt.asc">with pgp clearsign</a>)
@@ -346,13 +345,12 @@ export default async function IdsPage() {
           <ul>
             <li>
               Personal <a href="/pgp-pubkeys/F4C0895C.txt">F4C0895C</a>: 71D9
-              EF35 7AF6 410E 75E1 C3AD 34F7 A7C2 F4C0 895C, created:2015-01-21
-              expires:2025-01-18
+              EF35 7AF6 410E 75E1 C3AD 34F7 A7C2 F4C0 895C, created:2015-01-21,
+              expires:2030-01-21
             </li>
             <li>
               Work <a href="/pgp-pubkeys/789C85BD.txt">789C85BD</a>: 8E44 D207
-              CFFD 4037 40CA 5329 C9BA 0856 789C 85BD, created:2025-03-29{" "}
-              <strong>current</strong>
+              CFFD 4037 40CA 5329 C9BA 0856 789C 85BD, created:2025-03-29
             </li>
           </ul>
 
@@ -363,13 +361,13 @@ export default async function IdsPage() {
           <ul>
             <li>
               <a href="/pgp-pubkeys/F4C0895C.txt">F4C0895C</a>: 71D9 EF35 7AF6
-              410E 75E1 C3AD 34F7 A7C2 F4C0 895C, created:2015-01-21
-              expires:2025-01-18 <strong>current</strong>
+              410E 75E1 C3AD 34F7 A7C2 F4C0 895C, created:2015-01-21,
+              expires:2030-01-21 <strong>current</strong>
             </li>
             <li>
               <a href="/pgp-pubkeys/789C85BD.txt">789C85BD</a>: 8E44 D207 CFFD
-              4037 40CA 5329 C9BA 0856 789C 85BD, created:2025-03-29{" "}
-              <strong>current</strong>
+              4037 40CA 5329 C9BA 0856 789C 85BD, created:2025-03-29,
+              expires:2031-03-27 <strong>current</strong>
             </li>
             <li>
               <a href="/pgp-pubkeys/3DA8F24C.txt">3DA8F24C</a>: 1183 EFBE 9926
