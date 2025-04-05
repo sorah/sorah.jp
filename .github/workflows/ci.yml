@@ -4,6 +4,8 @@ on:
     branches:
       - main
       - master
+  schedule:
+    - cron: '6 6 * * 5'
 
 jobs:
   build:
@@ -22,7 +24,7 @@ jobs:
           role-to-assume: "arn:aws:iam::341857463381:role/gha-blog"
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
+          ruby-version: '3.4'
           bundler-cache: true
       - uses: actions/setup-node@v4
         with:
@@ -35,6 +37,7 @@ jobs:
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+      - run: './fetch.sh'
       - run: 'npm ci'
       - run: 'npx next build'
       - run: 'rsync -r public/ out'

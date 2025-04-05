@@ -29,6 +29,11 @@ export default async function PagesPage() {
               <Link href="/pages/salary">Sorah's Compensation (Salary)</Link>
             </li>
             <li className={styleFooterLi}>
+              <Link href="/pages/ongeki-p-rating">
+                Ongeki Re:Fresh Platinum Rating Calculator
+              </Link>
+            </li>
+            <li className={styleFooterLi}>
               <Link href="/pages/event-radio">
                 イベント・トランシーバー・ガイド
               </Link>
