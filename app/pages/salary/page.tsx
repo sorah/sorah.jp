@@ -27,7 +27,7 @@ type CompensationEntry = {
 function quickEntry(
   year: number,
   base: number,
-  bonus?: number
+  bonus?: number,
 ): CompensationEntry {
   return {
     year,
@@ -66,6 +66,7 @@ const COMPENSATION_DATA: CompensationEntry[] = [
     employmentIncomeWithholdingRecordUnavailable: true,
     month: 2,
   },
+  // TODO: Cookpad kou tax certificate: https://img.sorah.jp/x/20251113_115652_JbvnBUqmdE.png
 ];
 
 export default async function SalaryPage() {
