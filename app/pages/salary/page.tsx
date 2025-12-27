@@ -68,6 +68,7 @@ const COMPENSATION_DATA: CompensationEntry[] = [
   },
   {
     ...quickEntry(2025, 1650, 0),
+    extra: () => <>consultancy=168</>,
     employmentIncomeWithholdingRecordUnavailable: true,
     month: 4,
   },
