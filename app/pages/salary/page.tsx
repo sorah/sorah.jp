@@ -66,6 +66,11 @@ const COMPENSATION_DATA: CompensationEntry[] = [
     employmentIncomeWithholdingRecordUnavailable: true,
     month: 2,
   },
+  {
+    ...quickEntry(2025, 1650, 0),
+    employmentIncomeWithholdingRecordUnavailable: true,
+    month: 4,
+  },
   // TODO: Cookpad kou tax certificate: https://img.sorah.jp/x/20251113_115652_JbvnBUqmdE.png
 ];
 
