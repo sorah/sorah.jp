@@ -61,18 +61,12 @@ const COMPENSATION_DATA: CompensationEntry[] = [
   quickEntry(2022, 1000.2),
   quickEntry(2023, 1020, 60),
   quickEntry(2024, 1300.8, 100),
-  {
-    ...quickEntry(2025, 1480, 0),
-    employmentIncomeWithholdingRecordUnavailable: true,
-    month: 2,
-  },
+  { ...quickEntry(2025, 1480, 0), month: 2 },
   {
     ...quickEntry(2025, 1650, 0),
     extra: () => <>Consultancy: 1,680,000 JPY</>,
-    employmentIncomeWithholdingRecordUnavailable: true,
     month: 4,
   },
-  // TODO: Cookpad kou tax certificate: https://img.sorah.jp/x/20251113_115652_JbvnBUqmdE.png
 ];
 
 export default async function SalaryPage() {
